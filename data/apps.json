@@ -1,0 +1,54 @@
+[
+  {
+    "id": "app_about",
+    "name_key": "desktop.about_me",
+    "icon": "assets/icons/notepad.png",
+    "window": {
+      "title_key": "window_titles.about_me",
+      "default_width": 500,
+      "default_height": 400,
+      "content_html_file": "apps/about.html",
+      "canMaximize": true,
+      "allowMultipleInstances": false
+    }
+  },
+  {
+    "id": "app_projects",
+    "name_key": "desktop.projects",
+    "icon": "assets/icons/my_computer.png",
+    "window": {
+      "title_key": "window_titles.projects",
+      "default_width": 800,
+      "default_height": 600,
+      "content_html_file": "apps/projects.html",
+      "canMaximize": true,
+      "allowMultipleInstances": false
+    }
+  },
+  {
+    "id": "app_contact",
+    "name_key": "desktop.contact",
+    "icon": "assets/icons/contact.png",
+    "window": {
+      "title_key": "window_titles.contact",
+      "default_width": 400,
+      "default_height": 300,
+      "content_html_file": "apps/contact.html",
+      "canMaximize": false,
+      "allowMultipleInstances": false
+    }
+  },
+  {
+    "id": "app_settings",
+    "name_key": "desktop.settings",
+    "icon": "assets/icons/settings.png",
+    "window": {
+      "title_key": "window_titles.settings",
+      "default_width": 400,
+      "default_height": 300,
+      "content_html_file": "apps/settings.html",
+      "canMaximize": false,
+      "allowMultipleInstances": false
+    }
+  }
+]
