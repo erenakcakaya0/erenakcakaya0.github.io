@@ -1,0 +1,24 @@
+/* Gül Teması */
+:root {
+    --bg-color: #C0C0C0;
+    --wallpaper-color: #55aaaa; /* Duvar kağıdı rengi */
+    --text-color: #000000;
+    --text-inverted-color: #FFFFFF;
+    --border-light-color: #FFFFFF;
+    --border-dark-color: #808080;
+    --active-title-bg: #993366; /* Gül rengi */
+    --active-title-text: #FFFFFF;
+    --inactive-title-bg: #b26591;
+    --inactive-title-text: #e2e2e2;
+    --selected-bg: #993366;
+    --selected-text: #FFFFFF;
+}
+
+/* Rose Teması İçin Pasta Grafik Renkleri */
+.pie-chart {
+    border: 1px solid #808080;
+    background: conic-gradient(
+        #993366 var(--usage-percent),
+        #e2e2e2 0
+    );
+}

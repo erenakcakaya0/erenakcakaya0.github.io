@@ -1,0 +1,138 @@
+{
+  "boogle": {
+    "url": "http://www.boogle.com",
+    "titleKey": "sites.boogle_title",
+    "descriptionKey": "sites.boogle_desc",
+    "isVisitable": true,
+    "relatedResults": [
+      { "titleKey": "sites.boogle_maps_title", "url": "http://maps.boogle.com", "isVisitable": false, "descriptionKey": "sites.boogle_service_desc" },
+      { "titleKey": "sites.boogle_translate_title", "url": "http://translate.boogle.com", "isVisitable": false, "descriptionKey": "sites.boogle_service_desc" },
+      { "titleKey": "sites.boogle_news_title", "url": "http://news.boogle.com", "isVisitable": false, "descriptionKey": "sites.boogle_service_desc" }
+    ]
+  },
+  "generic_results": [
+    { "titleKey": "sites.generic1_title", "url": "http://www.newsmews.com/search?q={query-slug}", "isVisitable": false, "descriptionKey": "sites.generic_desc_title1" },
+    { "titleKey": "sites.generic2_title", "url": "http://www.conspiracy.org/{query-slug}", "isVisitable": false, "descriptionKey": "sites.generic_desc_title2" },
+    { "titleKey": "sites.generic3_title", "url": "http://www.forum.com/t/{query-slug}", "isVisitable": false, "descriptionKey": "sites.generic_desc_title3" },
+    { "titleKey": "sites.generic4_title", "url": "http://blog.howto.com/posts/{query-slug}", "isVisitable": false, "descriptionKey": "sites.generic_desc_title4" },
+    { "titleKey": "sites.generic5_title", "url": "http://viki.org/wiki/{query-slug}", "isVisitable": false, "descriptionKey": "sites.generic_desc_title5" },
+    { "titleKey": "sites.generic6_title", "url": "http://www.eshop.com/browse/{query-slug}", "isVisitable": false, "descriptionKey": "sites.generic_desc_title6" },
+    { "titleKey": "sites.generic7_title", "url": "http://www.fanclub.net/{query-slug}", "isVisitable": false, "descriptionKey": "sites.generic_desc_title7" },
+    { "titleKey": "sites.generic8_title", "url": "http://buzz.blog/{query-slug}-craze", "isVisitable": false, "descriptionKey": "sites.generic_desc_title8" },
+    { "titleKey": "sites.generic9_title", "url": "http://www.facespace.com/search/{query-slug}", "isVisitable": false, "descriptionKey": "sites.generic_desc_title9" },
+    { "titleKey": "sites.generic10_title", "url": "http://www.scholarhub.com/papers?q={query-slug}", "isVisitable": false, "descriptionKey": "sites.generic_desc_title10" },
+    { "titleKey": "sites.generic11_title", "url": "http://www.seriousstuff.com/records/{query-slug}.html", "isVisitable": false, "descriptionKey": "sites.generic_desc_title11" },
+    { "titleKey": "sites.generic12_title", "url": "http://www.healthportal.com/disease/{query-slug}", "isVisitable": false, "descriptionKey": "sites.generic_desc_title12" },
+    { "titleKey": "sites.generic13_title", "url": "http://www.courseme.com/course/{query-slug}", "isVisitable": false, "descriptionKey": "sites.generic_desc_title13" },
+    { "titleKey": "sites.generic14_title", "url": "http://www.dictionary.com/browse/{query-slug}", "isVisitable": false, "descriptionKey": "sites.generic_desc_title14" },
+    { "titleKey": "sites.generic15_title", "url": "http://www.financenow.com/stock/{query-slug}", "isVisitable": false, "descriptionKey": "sites.generic_desc_title15" },
+    { "titleKey": "sites.generic16_title", "url": "http://www.travelersclub.com/destinations/{query-slug}", "isVisitable": false, "descriptionKey": "sites.generic_desc_title16" },
+    { "titleKey": "sites.generic17_title", "url": "http://www.downloadcenter.com/apps/{query-slug}", "isVisitable": false, "descriptionKey": "sites.generic_desc_title17" },
+    { "titleKey": "sites.generic18_title", "url": "http://www.recipestop.com/recipes/{query-slug}", "isVisitable": false, "descriptionKey": "sites.generic_desc_title18" }
+  ],
+  "dome metamars": {
+    "url": "http://www.dome-metamars.com",
+    "titleKey": "sites.dome_metamars_title",
+    "descriptionKey": "sites.dome_metamars_desc",
+    "isVisitable": true,
+    "relatedResults": []
+  },
+  "antlerd’s song": {
+    "url": "http://www.antlerds-song.com",
+    "titleKey": "sites.antlerds_song_title",
+    "descriptionKey": "sites.antlerds_song_desc",
+    "isVisitable": true,
+    "relatedResults": []
+  },
+  "basilantus": {
+    "url": "http://www.basilantus.net",
+    "titleKey": "sites.basilantus_title",
+    "descriptionKey": "sites.basilantus_desc",
+    "isVisitable": true,
+    "relatedResults": []
+  },
+  "cellblock zero": {
+    "url": "http://www.cellblock-zero.com",
+    "titleKey": "sites.cellblock_zero_title",
+    "descriptionKey": "sites.cellblock_zero_desc",
+    "isVisitable": true,
+    "relatedResults": []
+  },
+  "disport": {
+    "url": "http://www.disport-os.com",
+    "titleKey": "sites.disport_title",
+    "descriptionKey": "sites.disport_desc",
+    "isVisitable": true,
+    "relatedResults": []
+  },
+  "lucifer’s bargain": {
+    "url": "http://www.lucifersbargain.com",
+    "titleKey": "sites.lucifers_bargain_title",
+    "descriptionKey": "sites.lucifers_bargain_desc",
+    "isVisitable": true,
+    "relatedResults": []
+  },
+  "pixebit.exe": {
+    "url": "http://www.pixebit.io",
+    "titleKey": "sites.pixebit_title",
+    "descriptionKey": "sites.pixebit_desc",
+    "isVisitable": true,
+    "relatedResults": []
+  },
+  "pixebit": { 
+    "url": "http://www.pixebit.io",
+    "titleKey": "sites.pixebit_title",
+    "descriptionKey": "sites.pixebit_desc",
+    "isVisitable": true,
+    "relatedResults": []
+  },
+  "unreal engine combat system": {
+    "url": "http://www.ue-combat-sys.com",
+    "titleKey": "sites.unreal_combat_title",
+    "descriptionKey": "sites.unreal_combat_desc",
+    "isVisitable": true,
+    "relatedResults": []
+  },
+  "unreal combat": {
+    "url": "http://www.ue-combat-sys.com",
+    "titleKey": "sites.unreal_combat_title",
+    "descriptionKey": "sites.unreal_combat_desc",
+    "isVisitable": true,
+    "relatedResults": []
+  },
+  "content creation": {
+    "url": "http://www.eren-content.com",
+    "titleKey": "sites.content_creation_title",
+    "descriptionKey": "sites.content_creation_desc",
+    "isVisitable": true,
+    "relatedResults": []
+  },
+  "mario paper clone": {
+    "url": "http://www.mario-paper-clone.net",
+    "titleKey": "sites.mario_clone_title",
+    "descriptionKey": "sites.mario_clone_desc",
+    "isVisitable": true,
+    "relatedResults": []
+  },
+  "mario clone": {
+    "url": "http://www.mario-paper-clone.net",
+    "titleKey": "sites.mario_clone_title",
+    "descriptionKey": "sites.mario_clone_desc",
+    "isVisitable": true,
+    "relatedResults": []
+  },
+  "backend systems": {
+    "url": "http://www.backend-proto.com",
+    "titleKey": "sites.backend_systems_title",
+    "descriptionKey": "sites.backend_systems_desc",
+    "isVisitable": true,
+    "relatedResults": []
+  },
+  "visual dialogue editor": {
+    "url": "http://www.dialogue-editor.com",
+    "titleKey": "sites.dialogue_editor_title",
+    "descriptionKey": "sites.dialogue_editor_summary_text",
+    "isVisitable": true,
+    "relatedResults": []
+  }
+}

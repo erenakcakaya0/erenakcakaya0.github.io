@@ -1,0 +1,171 @@
+.paint-app-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: var(--bg-color);
+    font-family: 'MS Sans Serif', sans-serif;
+}
+
+.paint-body {
+    display: flex;
+    flex-grow: 1;
+    overflow: hidden;
+}
+
+.paint-toolbar-container {
+    width: 56px;
+    background: var(--bg-color);
+    border-right: 1px solid var(--border-dark-color);
+    padding: 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.paint-toolbar-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2px;
+    margin-bottom: 5px;
+}
+
+.paint-tool {
+    width: 24px;
+    height: 24px;
+    border: 2px outset var(--border-light-color);
+    background-color: var(--bg-color);
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.paint-tool:active,
+.paint-tool.active {
+    border: 2px inset var(--border-light-color);
+    background-color: #dfdfdf;
+}
+
+.paint-tool::before {
+    content: '';
+    display: block;
+    width: 16px;
+    height: 16px;
+    background-image: url('../assets/icons/tools.png');
+    background-repeat: no-repeat;
+}
+
+.tool-select-free::before { background-position: 0px 0px; }
+.tool-select::before      { background-position: -16px 0px; }
+.tool-eraser::before      { background-position: -32px 0px; }
+.tool-bucket::before      { background-position: -48px 0px; }
+.tool-eyedropper::before  { background-position: -64px 0px; }
+.tool-zoom::before        { background-position: -80px 0px; }
+.tool-pencil::before      { background-position: -96px 0px; }
+.tool-brush::before       { background-position: -112px 0px; }
+.tool-spray::before       { background-position: -128px 0px; }
+.tool-text::before        { background-position: -144px 0px; }
+.tool-line::before        { background-position: -160px 0px; }
+.tool-curve::before       { background-position: -176px 0px; }
+.tool-rect::before        { background-position: -192px 0px; }
+.tool-polygon::before     { background-position: -208px 0px; }
+.tool-ellipse::before     { background-position: -224px 0px; }
+.tool-roundrect::before   { background-position: -240px 0px; }
+
+.paint-separator {
+    margin: 5px 0;
+    width: 90%;
+    height: 2px;
+    background: var(--border-dark-color);
+    border-bottom: 1px solid var(--border-light-color);
+}
+
+.paint-size-container {
+    text-align: center;
+    width: 100%;
+    padding: 2px;
+}
+
+.paint-canvas-area {
+    flex-grow: 1;
+    background-color: #808080;
+    padding: 15px;
+    overflow: auto;
+    display: flex;
+}
+
+#paint-canvas {
+    background-color: white;
+    box-shadow: 3px 3px 0px rgba(0,0,0,0.5);
+    flex-shrink: 0;
+    image-rendering: pixelated;
+}
+
+.paint-statusbar {
+    height: 46px;
+    border-top: 1px solid var(--border-light-color);
+    display: flex;
+    align-items: center;
+    padding: 4px;
+    background: var(--bg-color);
+}
+
+.current-colors {
+    width: 32px;
+    height: 32px;
+    border: 2px inset var(--border-light-color);
+    position: relative;
+    margin-right: 10px;
+    background: var(--bg-color);
+}
+
+#paint-secondary-color-display {
+    width: 14px;
+    height: 14px;
+    background: #fff;
+    position: absolute;
+    bottom: 3px;
+    right: 3px;
+    border: 1px solid var(--border-dark-color);
+    z-index: 1;
+}
+
+#paint-primary-color-display {
+    width: 14px;
+    height: 14px;
+    background: #000;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    border: 1px solid var(--border-dark-color);
+    z-index: 2;
+}
+
+.color-palette {
+    display: flex;
+    flex-wrap: wrap;
+    width: 215px;
+    height: 35px;
+    gap: 1;
+    border: 2px inset var(--border-light-color);
+}
+
+.paint-color-swatch {
+    width: 15px;
+    height: 15px;
+    border-right: 1px solid #808080;
+    border-bottom: 1px solid #808080;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+#paint-clear-btn {
+    padding: 4px 8px;
+    font-size: 12px;
+    border: 2px outset var(--border-light-color);
+}
+#paint-clear-btn:active {
+    border-style: inset;
+}

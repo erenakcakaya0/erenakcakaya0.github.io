@@ -1,0 +1,68 @@
+.boogle-main { text-align: center; padding-top: 100px; }
+.boogle-logo {
+    font-size: 72px;
+    font-weight: normal;
+    margin: 0;
+}
+.boogle-logo .b { color: #4285F4; } .boogle-logo .o1 { color: #EA4335; }
+.boogle-logo .o2 { color: #FBBC05; } .boogle-logo .g { color: #4285F4; }
+.boogle-logo .l { color: #34A853; } .boogle-logo .e { color: #EA4335; }
+#boogle-search-input { 
+    width: 400px; 
+    padding: 5px; 
+    margin-top: 20px; 
+    border: 1px solid var(--border-dark-color);
+    background-color: var(--content-bg); 
+    color: var(--content-text-color, #000000);
+}
+.boogle-buttons { margin-top: 10px; }
+.boogle-buttons button { border: 2px solid; border-color: var(--border-light-color) var(--border-dark-color) var(--border-dark-color) var(--border-light-color); background-color: var(--bg-color); padding: 5px 10px; margin: 0 5px; font-size: 13px; }
+.boogle-buttons button:active { border-color: var(--border-dark-color) var(--border-light-color) var(--border-light-color) var(--border-dark-color); }
+
+.results-header {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+.results-header a {
+    text-decoration: none;
+    margin-right: 15px;
+}
+.results-header .boogle-logo {
+    font-size: 36px;
+}
+.results-header #boogle-search-form {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+.results-header #boogle-search-input {
+    width: 100%;
+    margin-top: 0;
+    max-width: 450px;
+    color: var(--content-text-color, #000000);
+}
+.results-header button {
+    margin-left: 8px;
+    padding: 5px 10px;
+    font-size: 13px;
+    border: 2px solid;
+    border-color: var(--border-light-color) var(--border-dark-color) var(--border-dark-color) var(--border-light-color);
+    background-color: var(--bg-color);
+}
+.results-header button:active {
+    border-color: var(--border-dark-color) var(--border-light-color) var(--border-light-color) var(--border-dark-color);
+}
+/* ----------------------------------------------------------- */
+
+.search-result { margin-bottom: 20px; }
+.search-result h3 { margin: 0; }
+.search-result a { color: #0000EE; text-decoration: underline; font-size: 18px; }
+.search-result p { margin: 2px 0; color: var(--text-color); }
+.search-result span { color: #006621; }
+
+.dino-game-container { position: relative; width: 600px; height: 150px; border-bottom: 2px solid var(--border-dark-color); overflow: hidden; margin: 20px auto; }
+.dino { position: absolute; bottom: 0; left: 20px; width: 44px; height: 47px; background: url(https://win98icons.alexmeub.com/icons/png/dinosaur-1.png) no-repeat; }
+.cactus { position: absolute; bottom: 0; width: 25px; height: 50px; background: url(https://win98icons.alexmeub.com/icons/png/tree-2.png) no-repeat; }
+.jump { animation: dino-jump 0.5s linear; }
+@keyframes dino-jump { 0% { bottom: 0; } 50% { bottom: 100px; } 100% { bottom: 0; } }

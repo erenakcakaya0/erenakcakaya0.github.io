@@ -1,0 +1,229 @@
+.youview-container { display: flex; flex-direction: column; width: 100%; height: 100%; background: var(--bg-color); }
+.youview-header { display: flex; align-items: center; padding: 5px 10px; border-bottom: 2px solid var(--border-dark-color); flex-shrink: 0; }
+.youview-logo { font-family: 'Comic Sans MS', cursive; font-size: 28px; color: red; margin: 0; cursor: pointer; }
+.youview-search { display: flex; flex-grow: 1; margin: 0 50px; }
+#youview-search-input { width: 100%; border: 2px inset var(--border-dark-color); padding: 3px; }
+.youview-search button { margin-left: 5px; border: 2px outset var(--border-light-color); padding: 3px 10px; }
+.youview-body { display: flex; flex-grow: 1; overflow: hidden; }
+.youview-sidebar { width: 150px; flex-shrink: 0; border-right: 2px solid var(--border-dark-color); padding: 5px; font-size: 14px; overflow-y: auto; }
+.sidebar-item { padding: 8px 5px; cursor: pointer; }
+.sidebar-item:hover { background: var(--selected-bg); color: var(--selected-text); }
+hr { border: 0; border-top: 1px solid var(--border-dark-color); border-bottom: 1px solid var(--border-light-color); margin: 5px 0; }
+.youview-main-content { flex-grow: 1; overflow-y: auto; padding: 15px; background: #E9E9E9; }
+.video-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 15px; }
+.video-thumb { background: var(--bg-color); border: 2px outset var(--border-light-color); cursor: pointer; }
+.video-thumb:active { border-style: inset; }
+.video-thumb img { width: 100%; display: block; }
+.video-thumb-info { padding: 8px; }
+.video-thumb-info h4 { font-size: 14px; margin: 0 0 5px 0; }
+.video-thumb-info p { font-size: 12px; margin: 0; color: #555; }
+
+.video-page-layout { display: flex; gap: 20px; }
+.video-main-column { flex-grow: 1; min-width: 0; }
+
+.youview-container.video-page-active .youview-sidebar {
+    display: none;
+}
+.window.maximized .youview-container.video-page-active .video-recommendations-column {
+    display: block;
+}
+.video-recommendations-column {
+    width: 35%;
+    max-width: 400px;
+    min-width: 280px;
+    flex-shrink: 0;
+}
+#youtube-player-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+    background: black;
+    border: 2px inset var(--border-dark-color);
+    margin-bottom: 10px;
+}
+#youtube-player-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+
+.video-details h2 { font-size: 20px; margin: 10px 0; }
+.video-meta { font-size: 14px; color: #444; margin-bottom: 10px; }
+.video-channel { display: flex; align-items: center; }
+.video-channel img { width: 48px; height: 48px; border: 1px solid var(--border-dark-color); margin-right: 10px; }
+.video-channel h4 { margin: 0; font-size: 16px; }
+
+.video-recommendations-column .video-thumb { display: flex; margin-bottom: 10px; }
+.video-recommendations-column .video-thumb img { width: 120px; height: 67px; flex-shrink: 0; margin-right: 8px; }
+.video-recommendations-column .video-thumb-info h4 { font-size: 13px; white-space: normal; }
+.video-recommendations-column .video-thumb-info p { font-size: 11px; }
+
+#comments-section {
+    margin-top: 20px;
+}
+
+#comments-section h3 {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.comment {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.comment-avatar img {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    border: 1px outset var(--border-light-color);
+}
+
+.comment-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.comment-author {
+    font-weight: bold;
+    font-size: 13px;
+    margin-right: 8px;
+}
+
+.comment-timestamp {
+    font-size: 12px;
+    color: #555;
+}
+
+.comment-text {
+    margin-top: 4px;
+    font-size: 14px;
+}
+
+.custom-video-player {
+    position: relative;
+    width: 100%;
+    background-color: #000;
+    border: 2px inset var(--border-dark-color);
+    margin-bottom: 10px;
+    overflow: hidden;
+    aspect-ratio: 16 / 9;
+}
+
+video {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.video-controls-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.custom-video-player:hover .video-controls-overlay {
+    opacity: 1;
+}
+
+.progress-area {
+    position: relative;
+    width: 100%;
+    height: 5px;
+    margin-bottom: 10px;
+    background: #555;
+    cursor: pointer;
+}
+
+.progress-bar-fill {
+    height: 100%;
+    background: #ff0000;
+    width: 0%;
+}
+
+.progress-slider {
+    position: absolute;
+    top: -5px;
+    left: 0;
+    width: 100%;
+    height: 15px;
+    opacity: 0;
+    cursor: pointer;
+    margin: 0;
+}
+
+.controls-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.controls-left, .controls-center, .controls-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.custom-video-player button {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 2px 5px;
+}
+
+.custom-video-player button:hover {
+    color: #ff0000;
+}
+
+.time-display {
+    font-size: 12px;
+    font-family: monospace;
+}
+
+.settings-container {
+    position: relative;
+}
+
+.fake-settings-menu {
+    position: absolute;
+    bottom: 30px;
+    right: 0;
+    background: rgba(0, 0, 0, 0.9);
+    border: 1px solid #555;
+    padding: 5px;
+    width: 120px;
+    display: none;
+    font-size: 11px;
+    color: #ccc;
+    z-index: 10;
+}
+
+.fake-settings-menu div {
+    padding: 4px;
+    border-bottom: 1px solid #333;
+    cursor: default;
+}
+.fake-settings-menu div:hover {
+    background-color: #333;
+}
+
+.big-play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    color: rgba(255, 255, 255, 0.8);
+    pointer-events: none;
+    display: none;
+    text-shadow: 0 0 10px black;
+}

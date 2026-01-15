@@ -1,0 +1,170 @@
+/* Yüksek Kontrast Teması */
+:root {
+    --bg-color: #000000;       /* Pencereler ve Görev Çubuğu Siyah */
+    --wallpaper-color: #000000;
+    
+    --text-color: #FFFFFF;     /* Arayüz Yazıları Beyaz */
+    --text-inverted-color: #000000;
+    
+    /* İçerik Alanları (Notepad, Tarayıcı İçi) */
+    --content-bg: #FFFFFF;     /* İçerik Arka Planı Beyaz */
+    --content-text-color: #000000; /* İçerik Yazısı Siyah */
+
+    /* Kenarlıklar (Yeşil Tonları) */
+    --border-light-color: #00FF00; /* Parlak Yeşil */
+    --border-dark-color: #008000;  /* Koyu Yeşil */
+
+    /* Başlık Çubukları */
+    --active-title-bg: #008000;    /* Aktif Pencere Başlığı Yeşil */
+    --active-title-text: #FFFFFF;  /* Aktif Başlık Yazısı Beyaz */
+    --inactive-title-bg: #004000;  /* Pasif Pencere Başlığı Koyu Yeşil */
+    --inactive-title-text: #00FF00;/* Pasif Başlık Yazısı Parlak Yeşil */
+
+    /* Seçimler */
+    --selected-bg: #00FF00;    /* Seçim Arka Planı Parlak Yeşil */
+    --selected-text: #000000;  /* Seçim Yazısı Siyah */
+}
+
+/* --- MASAÜSTÜ & BAŞLAT MENÜSÜ --- */
+.desktop-icon span {
+    background-color: #000000;
+    color: #FFFFFF;
+    border: 1px solid #00FF00;
+    text-shadow: none;
+}
+
+.start-menu-item {
+    color: var(--text-color);
+}
+.start-menu-item:hover {
+    background-color: var(--selected-bg);
+    color: var(--selected-text);
+}
+
+/* --- BOOGLE DÜZENLEMELERİ --- */
+/* Arama sonuçları başlığı siyah olsun */
+.boogle-main h2 {
+    color: #000000;
+}
+
+/* Arama sonuçları açıklamaları (desc) siyah olsun */
+.search-result p {
+    color: #000000;
+}
+
+/* Ana sayfa butonları görünür olsun */
+.boogle-buttons button {
+    background-color: #DDDDDD; /* Açık gri */
+    color: #000000;            /* Siyah yazı */
+    border-color: #000000;
+}
+.boogle-buttons button:active {
+    background-color: #BBBBBB;
+}
+
+/* --- INTERNET EXPLORER DÜZENLEMELERİ --- */
+/* Menü ve Toolbar yazıları beyaz olsun */
+.ie-menu-item, 
+.ie-toolbar button {
+    color: #FFFFFF;
+}
+
+/* Disabled butonlar gri kalsın */
+.ie-toolbar button:disabled {
+    color: #808080;
+}
+
+/* --- DISPORT DÜZENLEMELERİ --- */
+/* Sunucu listesi arka planı siyah olsun */
+.disport-server-list {
+    background-color: #000000;
+    border-right: 2px solid #00FF00; /* Ayırıcı çizgi yeşil */
+}
+
+/* Chat kısmının arka planını siyah yap */
+.disport-main-content,
+.chat-panel,
+.chat-log {
+    background-color: #000000 !important;
+    color: #FFFFFF;
+}
+
+/* Chat içindeki mesaj metinleri */
+.message-content .text,
+.message-content .author,
+.message-content .timestamp {
+    color: #FFFFFF;
+}
+
+/* Option/Input Kısmı */
+.chat-input-container {
+    background-color: #000000;
+    border-top: 2px solid #00FF00; /* Üst çizgi yeşil */
+}
+
+/* Seçenekler Kutusu ve Yazma Alanı */
+.chat-input,
+.dialogue-choices {
+    background-color: #000000; /* Kutu siyah */
+    color: #FFFFFF;            /* Yazı beyaz */
+    border: 2px solid #00FF00; /* Dış çerçeve yeşil */
+}
+
+/* Seçeneklerin üzerine gelince */
+.choice-item:hover,
+.dialogue-choices div:hover {
+    background-color: #00FF00; /* Arka plan yeşil */
+    color: #000000;            /* Yazı siyah */
+}
+
+/* --- BİLDİRİM DÜZENLEMELERİ --- */
+.notification-popup,
+.notification-title,
+.notification-message .message-text {
+    color: #FFFFFF; /* Bildirim yazıları beyaz */
+}
+
+/* --- YAZMA İMLECİ (FLICKER) --- */
+.typing-cursor {
+    background-color: #FFFFFF !important; /* İmleç beyaz (Siyah zeminde görünsün diye) */
+}
+
+/* --- DİYALOG KUTUSU (DIALOG-BOX) DÜZENLEMELERİ --- */
+.dialog-box {
+    background-color: #000000 !important;
+    border-color: #00FF00 !important;
+}
+
+.dialog-content,
+.dialog-title-bar {
+    color: #FFFFFF !important;
+}
+
+.dialog-buttons button {
+    background-color: #000000 !important;
+    color: #FFFFFF !important;
+    border-color: #00FF00 !important;
+}
+
+.dialog-buttons button:hover,
+.dialog-buttons button:active {
+    background-color: #00FF00 !important;
+    color: #000000 !important;
+}
+
+/* --- BİLGİSAYARIM (MY COMPUTER) DÜZENLEMELERİ --- */
+.mc-sidebar {
+    background: #000000 !important; /* Mavi gradyan yerine siyah */
+    border-right: 2px solid #00FF00;
+    color: #FFFFFF;
+}
+
+.pie-chart {
+    border: 2px solid #FFFFFF;
+    /* DÜZELTME: Renk sırası değiştirildi ve '0deg' eklendi.
+       Yeşil kısım (% usage) kadar ilerler, kalanı siyah olur. */
+    background: conic-gradient(
+        #00FF00 0deg var(--usage-percent), 
+        #000000 var(--usage-percent) 360deg
+    ) !important; 
+}

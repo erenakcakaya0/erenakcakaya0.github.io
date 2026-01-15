@@ -1,0 +1,875 @@
+{
+  "tr": {
+    "login": {
+      "title": "Minidows95'e Hoş Geldiniz",
+      "role": "Bilgisayar Yöneticisi",
+      "password_label": "Parola",
+      "shutdown": "Kapat",
+      "ok": "Tamam",
+
+      "hint_day1": "İpucu: 1234",
+      "hint_day2": "İpucu: Dünyanın en iyi hayvanı",
+      "hint_day3": "İpucu: Temel renklerden biri",
+      "hint_day4": "İpucu: ((8+10)/2) - 9",
+      "hint_day5": "İpucu: Bilgisayarın adı",
+
+      "password_day1": "1234",
+      "password_day2": "kedi",
+      "password_day3": "mavi",
+      "password_day4": "sıfır"
+    },
+    "desktop": {
+      "settings": "Ayarlar",
+      "my_computer": "Bilgisayarım",
+      "notepad": "Hakkımda",
+      "internet_explorer": "Internet Explorer",
+      "disport": "Disport",
+      "day": ". Gün",
+      "paint": "Çizim",
+      "doom": "Doom"
+    },
+    "dialog": {
+      "restart_required_title": "Yeniden Başlatma Gerekli",
+      "restart_required_message": "Dil ayarlarının geçerli olması için uygulamanın yeniden başlatılması gerekiyor. Açık olan tüm pencereler kapanacaktır.",
+      "ok_button": "Tamam",
+      "cancel_button": "Vazgeç",
+      "quit_confirm_title": "Oyundan Çıkış",
+      "quit_confirm_message": "Oyunu tamamen kapatmak istiyor musunuz?"
+    },
+    "start_menu": {
+      "start": "Başlat",
+      "shutdown": "Bilgisayarı Kapat...",
+      "log_off": "Oturumu Kapat...",
+      "run": "Çalıştır...",
+      "help": "Yardım",
+      "find": "Bul",
+      "documents": "Belgeler",
+      "favorites": "Sık Kullanılanlar",
+      "programs": "Programlar",
+      "update": "Minidows Update"
+    },
+    "shutdown_screen": {
+      "message": "Şimdi bilgisayarınızı güvenle kapatabilirsiniz."
+    },
+    "window_titles": {
+      "settings": "Ayarlar",
+      "notepad": "Not Defteri",
+      "my_computer": "Bilgisayarım",
+      "error": "Hata",
+      "internet_explorer": "Internet Explorer",
+      "disport": "Disport",
+      "paint": "Çizim - İsimsiz",
+      "doom": "MS-DOS - DOOM.EXE"
+    },
+    "notifications": {
+      "task_complete": "Görev Tamamlandı",
+      "new_message": "Yeni Mesaj"
+    },
+    "internet_explorer": {
+      "back": "Geri",
+      "refresh": "Yenile",
+      "go": "Git",
+      "address": "Adres",
+      "boogle_search": "Boogle'da Ara",
+      "boogle_lucky": "Kendimi Şanslı Hissediyorum",
+      "network_error_title": "Bağlanılamıyor",
+      "network_error_message": "İnternete bağlanılamıyor.",
+      "dino_game_instructions": "Başlamak için Space tuşuna basın",
+      "file": "Dosya",
+      "edit": "Düzenle",
+      "view": "Görüntüle",
+      "favorites": "Favoriler",
+      "help": "Yardım"
+    },
+    "settings_window": {
+      "legend_appearance": "Görünüm",
+      "change_theme": "Tema Değiştir:",
+      "theme_classic": "Minidows 95 Klasik",
+      "theme_rose": "Gül",
+      "theme_high_contrast": "Yüksek Kontrast",
+      "legend_system": "Sistem",
+      "legend_profile": "Profil",
+      "choose_avatar": "Avatar Seç:",
+      "change_language": "Dili Değiştir:",
+      "change_pc_name": "Bilgisayar Adı:",
+      "game_settings": "Oyun Ayarları",
+      "auto_typing": "Hızlı Yazma (Auto-Typing)",
+      "new_game": "Yeni Oyun:",
+      "new_game_title": "Yeni Oyuna Başlanacak",
+      "new_game_message": "Tüm ilerlemeniz silinecek ve oyun en başa dönecek. Emin misiniz?",
+      "new_game_overlay_message": "Yeni oyun başlatılıyor...",
+      "reset": "Sıfırla",
+      "ok_button": "Tamam",
+      "cancel_button": "İptal"
+    },
+    "context_menu": {
+      "desktop": {
+        "view": "Görünüm",
+        "sort_by": "Sıralama ölçütü",
+        "refresh": "Yenile",
+        "new": "Yeni"
+      },
+      "icon": {
+        "open": "Aç",
+        "run_as_admin": "Yönetici olarak çalıştır",
+        "cut": "Kes",
+        "copy": "Kopyala",
+        "delete": "Sil",
+        "properties": "Özellikler"
+      },
+      "taskbar": {
+        "close": "Pencereyi Kapat"
+      }
+    },
+    "tasks": {
+        "new_note": "- 'Not Defteri' uygulamasında (+) tuşu ile yeni bir not oluştur.",
+        "refresh_desktop": "- Masaüstüne sağ tıklayarak 'Yenile' seçeneğini kullan.",
+        "change_theme": "- 'Ayarlar' uygulamasını aç ve temayı değiştir.",
+        "maximize_and_restore": "- Bu pencereyi tam ekran yap ve eski haline getir.",
+        "change_pc_name": "- Bilgisayar ismini değiştir.",
+        "change_avatar": "- Bilgisayar avatarını değiştir.",
+
+        "first_hate_or_love": "- İlk önemli kararını ver. Sevgi veya nefret kazan."
+    },
+    "sites": {
+      "boogle_title": "Boogle",
+      "boogle_desc": "Boogle resmi sayfası.",
+      "boogle_maps_title": "Boogle Maps - Haritalar",
+      "boogle_translate_title": "Boogle Translate - Çeviri Hizmeti",
+      "boogle_news_title": "Boogle News - Haberler",
+      "boogle_service_desc": "Boogle hizmeti.",
+      "youview_title": "YouView - Videolarınızı paylaşın",
+      "youview_desc": "YouView resmi sayfası.",
+      "youview_music_title": "YouView Music - Müzik Dinle",
+      "youview_gaming_title": "YouView Gaming - Canlı Oyun Yayınları",
+      "generic1_title": "{query} hakkında en son haberler",
+      "generic_desc_title1": "{query} hakkındaki en güncel haberleri, son dakika gelişmelerini ve özel analizleri anında okuyun.",
+      "generic2_title": "{query} gerçekten var mı?",
+      "generic_desc_title2": "{query} konusunu çevreleyen gizemleri ve komplo teorilerini derinlemesine inceliyoruz. Gerçekler orada bir yerde ve biz bunu bulmaya yemin ettik. Siz de bize katılın.",
+      "generic3_title": "{query} hakkında ne düşünüyorsunuz? Bir tek ben mi abartılı buluyorum?",
+      "generic_desc_title3": "Forumumuzdaki tartışmaya katılın. {query} hakkındaki dürüst görüşlerinizi paylaşın ve başkalarının ne düşündüğünü görün.",
+      "generic4_title": "10 adımda {query} uzmanı olun",
+      "generic_desc_title4": "Kapsamlı rehberimiz sizi başlangıç seviyesinden profesyonelliğe taşıyacak. Bu kolay adımlarla {query} konusunda ustalaşın.",
+      "generic5_title": "{query} - Vikipedia, özgür ansiklopedi",
+      "generic_desc_title5": "{query} üzerine hazırlanmış, tarihini, önemini ve ilgili konuları kapsayan eksiksiz ansiklopedi maddesi.",
+      "generic6_title": "{query} için alışveriş sonuçları",
+      "generic_desc_title6": "Binlerce online mağazadan {query} için en iyi fırsatları bulun, fiyatları karşılaştırın ve yorumları okuyun.",
+      "generic7_title": "Resmi {query} Hayran Kulübü",
+      "generic_desc_title7": "Hayranlar için bir numaralı adres. Özel içeriklere ulaşın, topluluk etkinliklerine katılın ve diğer meraklılarla tanışın.",
+      "generic8_title": "{query} hakkında neden herkes konuşuyor?",
+      "generic_desc_title8": "Abi {query} aşağı, {query} yukarı sürekli duyuyorum... Eski sevgilim bir {query} delisiydi... Benim annem de öyle acaba annem eski sevgilin mi?.. {query} sayfasından birbirimizi nasıl bulduk lan!",
+      "generic9_title": "{query} hakkında en popüler gönderiler",
+      "generic_desc_title9": "{query} ile ilgili en çok beğenilen, paylaşılan ve yorum alan sosyal medya gönderilerini ve viral içerikleri görün.",
+      "generic10_title": "{query} üzerine akademik makaleler ve araştırmalar",
+      "generic_desc_title10": "{query} konusu üzerine hakemli makalelere, bilimsel çalışmalara ve derinlemesine akademik araştırmalara erişin.",
+      "generic11_title": "Ciddiyet içinde {query} inceleme. HİÇ ŞAKA YOK!",
+      "generic_desc_title11": "Bu sefer şaka yok. {query} konusunu tüm ciddiyetimizle... inceleyeceğiz. Şaka yapacaksan bu siteden git!",
+      "generic12_title": "{query} belirtileri ve tedavisi",
+      "generic_desc_title12": "Güvenilir tıbbi kaynaklardan {query} için yaygın belirtiler, nedenler ve tedavi seçenekleri hakkında bilgi edinin.",
+      "generic13_title": "{query} Öğrenin: Kapsamlı Video Kursu",
+      "generic_desc_title13": "Sektörün önde gelen uzmanları tarafından verilen {query} üzerine eksiksiz bir eğitim almak için video kursumuza kaydolun.",
+      "generic14_title": "{query} bize neler söylüyor? - Biz de bilmiyoruz...",
+      "generic_desc_title14": "{query} hep aklımızı karıştıran yegane konudur. Soruları biz soruyoruz ama cevaplar bizde de yok. Sanırım...",
+      "generic15_title": "{query} hisse senedi fiyatı ve piyasa verileri",
+      "generic_desc_title15": "{query} için anlık hisse senedi fiyatlarını, geçmiş verileri, finansal grafikleri ve piyasa analizlerini alın.",
+      "generic16_title": "{query} için en iyi oteller ve seyahat rehberi",
+      "generic_desc_title16": "Mükemmel seyahatinizi planlayın. Ziyaretiniz için en iyi puanlı otelleri, mutlaka görülmesi gereken yerleri ve özel ipuçlarını bulun.",
+      "generic17_title": "{query} İndir. Güvenli İndir. Virüssüz İndir. Şimdi İndir. Hızlıca İndir. Her Gün İndir. İndir...",
+      "generic_desc_title17": "{query} indirmek için resmi ve güvenli kaynak. Her zaman en son sürüme güncellenir. %100 virüs ve kötü amaçlı yazılım içermez. YEMİN EDİYORUM VİRÜS YOK BİR KERE İNDİRME TUŞUNA BAS BİR DAHA BASMAZSIN.",
+      "generic18_title": "En lezzetli {query} tarifleri! En iyi tarif bizde!",
+      "generic_desc_title18": "Sıradan tariflerden sıkıldınız mı? Bizimki test edildi, mükemmelleştirildi ve tattığınız en iyi {query} olacağı garanti edildi!",
+      
+      "dome_metamars_title": "Dome Metamars",
+      "dome_metamars_desc": "Blockchain tabanlı Mars kolonisinde hayatta kalma ve şehir kurma simülasyonu. Proje detayları ve geliştirme süreci.",
+      "dome_metamars_subtitle": "Blockchain Tabanlı Şehir İnşa Simülasyonu",
+      
+      "dome_metamars_summary_title": "Proje Özeti",
+      "dome_metamars_summary_text": "Middle East Technical University’de (ODTÜ) tanıştığım bir ekibin projesine dahil oldum ve beraber Blockchain tabanlı bir şehir inşa simülatörü oyunu projesi yaptık. Projenin Client core mekanikleri kısmında görev aldım ve mağaza, yol oluşturma, terrain manipulation, gece gündüz döngüsü mekaniklerini yazdım. Çalıştığım en ciddi projeydi ve Google Game Startup programına dahil edildik. Azure kullanımı için Microsoft’tan teklif aldık. 1.5 yıllık bir geliştirme süreci ardından proje iptal edildi.",
+      
+      "dome_metamars_mechanics_title": "Geliştirilen Mekanikler",
+      "dome_metamars_mechanics_list": "<li>Mağaza Sistemi (In-game Store)</li><li>Yol Oluşturma (Road Building)</li><li>Arazi Manipülasyonu (Terrain Modification)</li><li>Gece/Gündüz Döngüsü (Day/Night Cycle)</li>",
+      
+      "dome_metamars_achievements_title": "Başarılar & Durum",
+      "dome_metamars_status": "Durum: İptal Edildi (Cancelled)",
+      
+      "dome_metamars_link_site": "[ Resmi Siteye Git ]",
+      "dome_metamars_link_video": "[ Youtube Demosunu İzle ]",
+
+
+      
+      "antlerds_song_title": "Antlerd’s Song",
+      "antlerds_song_desc": "Müziği ve ritmi duyamayan bir ırkın anamolisi olan karakterimiz müzik yapmak için maceralara atılır. Hikaye odaklı ritim ve macera oyunu.",
+      "antlerds_song_subtitle": "Hikayeli Ritim & Bullet Hell Oyunu",
+      
+      "antlerds_song_summary_title": "Proje Hikayesi",
+      "antlerds_song_summary_text": "Hikayeli bir Bullet Hell tarzında olan bu oyunun prototipini ve şarkılarını kendi başıma hazırladım. Oyun için hazırladığım şarkıları notalarına ve hangi sürede çaldığına göre JSON formatına dönüştürüp, bu veriyi okuyarak ritimli atakların (pattern) yapılmasını sağladım.",
+      
+      "antlerds_song_mechanics_title": "Teknik Detaylar",
+      "antlerds_song_mechanics_list": "<li>Özel Müzik Besteleme & Entegrasyon</li><li>JSON Tabanlı Ritim Sistemi</li><li>Bullet Hell Mekanikleri</li><li>Hikaye Anlatımı</li>",
+      
+      "antlerds_song_github_text": "Ritim ile obje oluşturma mekaniğini incelemek için GitHub sayfasına göz atabilirsiniz.",
+      "antlerds_song_link_github": "[ GitHub Reposuna Git ]",
+
+
+      
+      "basilantus_title": "Basilantus",
+      "basilantus_desc": "Kardeşimizi farklı evrene kaçıran varlıkların peşinden Basilantus diyarına geliriz. Bulmaca ve keşif odaklı 2D/3D platform oyunu.",
+      "basilantus_subtitle": "Stilize RPG Prototipi",
+      
+      "basilantus_main_text": "Stilize bir RPG için somut bir prototip geliştirdim. Oyun tasarım dokümanı ve anlatı üzerinde bir ekiple işbirliği yapsam da, tüm teknik uygulamayı (implementasyon) tek başıma üstlendim.",
+      
+      "basilantus_feat_grid_title": "Grid Optimizasyonu",
+      "basilantus_feat_grid_desc": "Performansı artırmak için oyuncu konumuna göre harita bölümlerini dinamik olarak yükleyen ve kaldıran (load/unload) optimize edilmiş bir ızgara (grid) yükleme sistemi programladım.",
+      
+      "basilantus_feat_dialogue_title": "Gelişmiş Diyalog Sistemi",
+      "basilantus_feat_dialogue_desc": "Zengin metin etiketlerini (rich text tags) destekleyen sağlam bir diyalog sistemi uyguladım. Özellikler arasında noktalama işaretlerine dayalı otomatik duraklamalar ve duyguyu iletmek için özel metin animasyonları (sallanma, dalgalanma, renk değişimleri) bulunur.",
+      
+      "basilantus_feat_combat_title": "Savaş Sistemi",
+      "basilantus_feat_combat_desc": "Hafif ve ağır saldırı komboları içeren gerçek zamanlı bir savaş sistemi tasarladım. Akıcı kılıç animasyonları ve vuruş hissi (impact feel) sağlamak için DOTween kütüphanesini kullandım.",
+
+
+      
+      "cellblock_zero_title": "Cellblock ZERO",
+      "cellblock_zero_desc": "Mutantları hapseden bir şirketin gardiyanıyız. Mutantların hikayelerini dinleyip suçlu olup olmadıklarına karar veriyoruz.",
+
+
+
+      
+      "disport_title": "Disport",
+      "disport_desc": "Tarayıcı içinde çalışan, Windows 95 estetiğine sahip interaktif bir görsel roman ve işletim sistemi simülasyonu oyunu.",
+      "disport_subtitle": "Web Tabanlı İşletim Sistemi Simülasyonu",
+      
+      "disport_summary_title": "Proje Hakkında",
+      "disport_summary_text": "Disport OS, modern web teknolojilerini kullanarak Windows 95 deneyimini tarayıcıya taşıyan interaktif bir görsel roman projesidir. Herhangi bir Framework (React, Vue vb.) kullanılmadan, tamamen Vanilla JavaScript ile geliştirilmiştir. Özel olarak yazılmış bir Pencere Yöneticisi (Window Manager), Sanal Dosya Sistemi ve Olay Güdümlü (Event-Driven) bir mimariye sahiptir. Bu portfolyo sitesi de bu oyunun temelleri alınarak hazırlanmıştır.",
+      
+      "disport_feat_chat_title": "İnteraktif Hikaye Anlatısı (Mesajlaşma)",
+      "disport_feat_chat_desc": "Disport uygulaması üzerinden kurgusal karakterlerle (NPC) gerçek zamanlı mesajlaşma simülasyonu. JSON tabanlı diyalog ağaçları kullanılarak oluşturulan, doğrusal olmayan hikaye akışı.",
+      
+      "disport_feat_task_title": "Dinamik Görev Sistemi (Görev Takibi)",
+      "disport_feat_task_desc": "Not Defteri uygulamasına entegre edilmiş dinamik görev mekaniği. Oyuncular, hikaye ilerledikçe açılan yeni görevleri ve tamamlananları 'check-list' formatında anlık olarak takip edebilir.",
+      
+      "disport_tool_title": "Geliştirici Aracı: Visual Dialogue Editor",
+      "disport_tool_desc": "Disport OS içindeki karmaşık diyalog ağaçları, özel olarak geliştirdiğim node tabanlı JSON editörü ile yönetilmektedir.",
+      "disport_tool_link": "[ İncele ]",
+
+      "disport_link_repo": "[ Kaynak Kodları İncele ]",
+
+
+
+      "dialogue_editor_title": "Visual Dialogue Editor",
+      "dialogue_editor_subtitle": "Node Tabanlı JSON Diyalog Aracı",
+      
+      "dialogue_editor_summary_title": "Proje Amacı",
+      "dialogue_editor_summary_text": "Oyunlardaki (özellikle Disport OS gibi) karmaşık ve dallanan diyalog yapılarını yönetmek için geliştirdiğim, tarayıcı tabanlı görsel editör. LiteGraph.js kütüphanesi üzerine kurulu bu araç, sürükle-bırak mantığıyla diyalog ağaçları oluşturmayı ve bunları oyun motoruna uygun optimize edilmiş JSON formatına dönüştürmeyi sağlar.",
+      
+      "dialogue_editor_arch_title": "Kod Mimarisi",
+      "dialogue_editor_arch_nodes": "nodes.js: Özel Node Tipleri (Start, Dialogue, Branch) ve Widget yönetimi.",
+      "dialogue_editor_arch_io": "io.js: Graph yapısını recursive (özyinelemeli) olarak gezip temiz JSON çıktısı üreten algoritma.",
+      "dialogue_editor_arch_state": "state.js: Global dil ve değişken yönetimi (State Management).",
+      
+      "dialogue_editor_link_github": "[ GitHub Reposunu İncele ]",
+
+
+
+      "dialogue_editor_home_title": "Visual Dialogue Editor - Dokümantasyon",
+      "dialogue_editor_home_desc": "Oyun içi diyalog sistemlerini yönetmek için geliştirilmiş, LiteGraph.js tabanlı görsel editörün teknik dokümantasyonu.",
+      "dialogue_editor_btn_nodes": "Nodes (Düğümler)",
+      "dialogue_editor_btn_state": "State (Durum)",
+      "dialogue_editor_btn_io": "IO (Giriş/Çıkış)",
+      "dialogue_editor_btn_ui": "UI (Arayüz)",
+      "dialogue_editor_btn_app": "App (Uygulama)",
+
+      "dialogue_doc_nodes_title": "Nodes.js Modülü",
+      "dialogue_doc_nodes_intro": "Bu modül, editörde kullanılan tüm özel düğüm tiplerini tanımlar. LiteGraph.js üzerine kurulu bu yapılar, dinamik widget yönetimi ve state entegrasyonu içerir.",
+
+      "dialogue_doc_node_start_title": "Start Node (Başlangıç)",
+      "dialogue_doc_node_start_desc": "Diyalog akışının giriş noktasıdır. NPC ismini tanımlar ve yeşil renkli bir başlangıç bloğu oluşturur.",
+
+      "dialogue_doc_node_dialogue_title": "Dialogue Node (Diyalog)",
+      "dialogue_doc_node_dialogue_desc": "Editörün en kapsamlı düğümüdür. Çoklu dil desteği, görsel tanımlama ve dinamik seçenek (Choice) ekleme mekanizmalarını barındırır. 'updateChoicesUI' fonksiyonu ile çıkış pinlerini ve widgetları anlık olarak günceller.",
+
+      "dialogue_doc_node_branch_title": "Branch Node (Koşul)",
+      "dialogue_doc_node_branch_desc": "Oyun içi değişkenleri (Attributes) kontrol eder. Seçilen operatöre (==, >, < vb.) göre akışı True veya False yönüne dallandırır.",
+
+      "dialogue_doc_node_merge_title": "Merge Node (Birleştir)",
+      "dialogue_doc_node_merge_desc": "Farklı kollara ayrılmış diyalog akışlarını tek bir noktada birleştirmek için kullanılır. Giriş pinleri dinamik olarak artırılıp azaltılabilir.",
+
+      "dialogue_doc_node_end_title": "End Node (Bitiş)",
+      "dialogue_doc_node_end_desc": "Bir diyalog dalını sonlandırır. Kırmızı renk ile görselleştirilir.",
+
+      "dialogue_doc_node_set_choice_title": "Set Choice Node (Seçim Ata)",
+      "dialogue_doc_node_set_choice_desc": "Oyuncunun yaptığı bir seçimi veya değişkeni state içinde kaydeder. Örneğin 'Müzik Tercihi' kategorisine 'Rock' değerini atamak için kullanılır.",
+
+      "dialogue_doc_node_branch_choice_title": "Branch Choice Node (Seçime Göre Dallan)",
+      "dialogue_doc_node_branch_choice_desc": "Daha önce kaydedilmiş bir seçime (Set Choice) göre akışı yönlendirir. Seçilen kategorideki tüm olasılıkları otomatik olarak çıkış pini (Output) haline getirir.",
+      
+      "dialogue_doc_io_title": "IO.js Modülü",
+      "dialogue_doc_io_intro": "Node grafiğinin serileştirilmesi (Export) ve geri yüklenmesi (Import) işlemlerini yönetir. Görsel grafiği oyun motorunun anlayacağı optimize edilmiş bir JSON formatına dönüştürür.",
+
+      "dialogue_doc_func_export_title": "exportGraphToJSON",
+      "dialogue_doc_func_export_desc": "LiteGraph üzerindeki tüm düğümleri tarar, özelliklerini ve bağlantılarını (edges) analiz eder. recursive (özyinelemeli) olmayan düz bir yapı kullanarak temiz bir JSON çıktısı üretir.",
+
+      "dialogue_doc_func_load_title": "loadGraphFromJSON",
+      "dialogue_doc_func_load_desc": "Mevcut grafiği temizler ve verilen JSON verisini işler. Düğümleri koordinatlarına göre yerleştirir, özelliklerini (properties) geri yükler ve bağlantıları tekrar kurar.",
+
+      "dialogue_doc_state_title": "State.js Modülü",
+      "dialogue_doc_state_intro": "Uygulamanın global durumunu, LiteGraph örneğini ve proje ayarlarını (diller, nitelikler) merkezi olarak yönetir.",
+
+      "dialogue_doc_state_graph_title": "Graph Initialization",
+      "dialogue_doc_state_graph_desc": "LiteGraph ve Canvas örnekleri burada oluşturulur ve dışarıya (export) açılır. Tüm düğümler bu 'graph' nesnesine eklenir.",
+
+      "dialogue_doc_state_data_title": "Global Data Structures",
+      "dialogue_doc_state_data_desc": "Proje genelinde kullanılan diller (languages), karakter özellikleri (attributes) ve seçenek havuzları (choices) burada tutulur.",
+
+      "dialogue_doc_state_funcs_title": "State Modifiers (Setters)",
+      "dialogue_doc_state_funcs_desc": "JSON'dan veri yüklenirken global state'i güncellemek için kullanılan yardımcı fonksiyonlar. Referansları korumak için dizileri boşaltıp yeniden doldurur.",
+
+      "dialogue_doc_state_preview_title": "Preview Updater",
+      "dialogue_doc_state_preview_desc": "Arayüz veya veriler değiştiğinde JSON önizlemesini güncellemek için kullanılan bir 'placeholder' nesnesidir. Gerçek işlevi app.js içinde atanır.",
+
+      "dialogue_editor_app_ui_title": "Uygulama ve Arayüz (App & UI)",
+      "dialogue_editor_app_ui_desc": "Uygulamanın başlatılması (Initialization), olay dinleyicileri (Event Listeners) ve arayüz etkileşimleri (UI Logic) hakkında detaylı inceleme yapmak için kaynak kodlarına göz atabilirsiniz.",
+      "dialogue_editor_btn_repo": "[ GitHub Reposuna Git ]",
+
+
+
+      "lucifers_bargain_title": "Lucifer’s Bargain",
+      "lucifers_bargain_desc": "Sevgilimizi canlandırmak için şeytanla anlaşıp büyüler yaptığımız karanlık temalı bir bulmaca oyunu",
+      
+      "pixebit_title": "Pixebit.exe",
+      "pixebit_desc": "Evrene virüsler musallat olur ve biz de dosyaları toplayarak düzeltmeye çalışırız. 2D platform oyunu.",
+      
+      "unreal_combat_title": "Unreal Engine Combat System",
+      "unreal_combat_desc": "Unreal Engine 5 ile geliştirilmiş, gelişmiş yakın dövüş ve kombo mekanikleri prototipi.",
+      
+      "content_creation_title": "Content Creation & Experimental",
+      "content_creation_desc": "Video kurgu, oyun yapımı ve deneysel interaktif sanat çalışmaları koleksiyonu.",
+      
+      "mario_clone_title": "Mario Paper Clone",
+      "mario_clone_desc": "Paper Mario görselliğini Unreal Engine motorunda yeniden oluşturulmuş teknik demosu.",
+      
+      "backend_systems_title": "Backend Systems & Mobile Prototyping",
+      "backend_systems_desc": "Node.js, Python, C# kullanılarak geliştirilmiş mimariler ve mobil uygulama prototipleri."
+    },
+    "youview": {
+      "search": "Ara",
+      "home": "Anasayfa",
+      "trending": "Trendler",
+      "subscriptions": "Abonelikler",
+      "library": "Kitaplık",
+      "history": "Geçmiş",
+      "music": "Müzik",
+      "sports": "Spor",
+      "gaming": "Oyun",
+      "recommended_videos": "Önerilen Videolar",
+      "views": "görüntülenme",
+      "search_results_for": "\"{query}\" için Arama Sonuçları"
+    },
+    "youview_channels": {
+      "channel1": "Nostalji Kutusu",
+      "channel2": "90'lar Müzik Arşivi",
+      "channel3": "Eski Oyunlar TV",
+      "channel4": "TeknoZaman"
+    },
+    "disport_ui": {
+      "direct_messages_header": "DOĞRUDAN MESAJLAR",
+      "online_header": "ÇEVRİMİÇİ",
+      "welcome_message": "Bir konuşma seçin.",
+      "activity_playing": "Oynuyor:",
+      "activity_listening": "Dinliyor:",
+      "typing_indicator": "{name} yazıyor...",
+      "read_only_chat": "[Bu sohbete sadece bakabilirsin.]",
+      "npc_not_talking": "[{name} bugün konuşmak istemiyor.]",
+      "status_online": "Çevrimiçi",
+      "status_offline": "Çevrimdışı",
+      "search_title": "Ara",
+      "search_placeholder": "Kelime ara...",
+      "search_results_found": "{count} sonuç bulundu"
+    },
+    "disport_friends_desc": {
+      "alice_desc": "İçeriden dışarıya doğru inşa ettiğim kutunun içinde kilitli kaldım.",
+      "layla_desc": "ve basamaklarda çöktüm, ağladım",
+      "ron_desc": "BOAAAAA",
+      "casey_desc": "Resmi"
+    },
+    "my_computer": {
+      "local_disk": "Yerel Disk",
+      "select_item_desc": "Bu klasördeki öğelerin açıklamasını görmek için bir öğe seçin.",
+      "objects_count": "nesne",
+      "type_local": "Yerel Disk",
+      "total_size": "Toplam Boyut",
+      "free_space": "Boş Alan",
+      "access_denied": "E:\\Erişim engellendi. Lütfen yöneticiye başvurun.",
+      "insert_disk_error": "Aygıt hazır değil."
+    },
+    "paint": {
+      "file": "Dosya",
+      "edit": "Düzenle",
+      "view": "Görünüm",
+      "image": "Resim",
+      "colors": "Renkler",
+      "help": "Yardım",
+      "tool_brush": "Fırça",
+      "tool_eraser": "Silgi",
+      "tool_rect": "Kutu",
+      "clear": "Temizle",
+      "size": "Boyut",
+      "clear_confirm": "Resmi temizlemek istediğine emin misin?"
+    },
+    "transition": {
+      "day_finished": "Gün bitti.",
+      "day_incomplete": "Gün henüz bitmedi."
+    },
+    "portfolio_content": [
+      {
+        "id": "bio",
+        "title": "hakkimda.txt",
+        "content": "Selam ziyaretçi, ben Eren Akcakaya!\n\n23 yaşındayım...\n\nLise zamanlarında ilk kez <span style='color: red;'>Undertale</span> oynadıktan sonra ve bu oyunun <span style='color: #0000FF;'>tek kişi tarafından yapıldığını</span> öğrendiğimde hayatım değişti. Bu kadar etkileyici bir oyunun tek kişi tarafından yapılması beni o kadar büyüledi ki ben de oyun yapmak, yazılımla uğraşmak istedim. Küçüklüğümden itibaren teknolojiye hep bir ilgim olmuştur ama ilk defa bu kadar fazla içine girmek istedim.\n\nKabul edelim <span style='color: #0000FF;'>eski teknoloji estetiği ve minimalist olmayan UI'lar</span> daha ilgi çekici değil mi? ᕙ(⇀‸↼‶)ᕗ\n\nLisede İngilizce bölümündeydim ve ne matematik ne fizik gibi sayısal bölümler hayalimde yoktu. Fakat yazılımla ilgilenmeye başladıkça lisedeki dil bölümü derslerini umursamayıp sayısal kısma yöneldim. <span style='color: #0000FF;'>Ankara Üniversitesi Bilgisayar Programcılığı</span> bölümüne girdim ve bölümü <span style='color: #0000FF;'>3.6/4 GPA</span> ile bitirdim. Evet sevdiğim bir derse çalışmaktan gurur duyuyorum! Ardından <span style='color: #0000FF;'>Eskişehir Teknik Üniversitesi fizik bölümüne</span> girdim. Hala bu bölümde okuyorum fakat bölüm bittikten sonra da <span style='color: #0000FF;'>yazılımda kariyerimi ilerleteceğim.</span>\n\n ᕕ༼⌐■-■༽ᕗ\n\nProjelere \"hakkımda.txt\" kısmında girmeyeceğim ama kısaca bahsedebilirim. [<span style='color: #0000FF;'>projeler.list</span> dosyasına göz atabilirsin ╰ (´꒳`) ╯ ]\n\nBilgisayar programcılığı okurken Ortadoğu Teknik Üniversitesi'nde tanıştığım bir girişimci ekip ile ilk ciddi iş deneyimime giriştim. Bu <span style='color: #0000FF;'>blockchain tabanlı bir şehir inşa etme oyunuydu.</span>\n\n<span style='color: #0000FF;'>Game Jam'lere katıldım</span> ve tanımadığım insanların takımlarına girip eğlenceli zamanlar geçirip projeler çıkardık.\n\n<span style='color: #0000FF;'>Kendi solo projelerimi ürettim...</span> [Birkaç demo saymazsak henüz yayınlanmadılar ama yakın zamanda olacak! Hatta belki bu site bile bir işarettir????? (~_^) ]\n\n<span style='color: red;'>Unity Engine</span> öğretmenliği yaptığımı söylemiş miydim? <span style='color: #0000FF;'>14 kişilik 7-17 yaş arası öğrencilerime</span> <span style='color: red;'>Unity Engine Basics</span> öğrettim ve <span style='color: #0000FF;'>projeler yaptırdım.</span>\n\nYazılımdan alakasız hobilerimden bahsetmek isterim.\n\n<a href='https://www.instagram.com/erentheakcakaya/' target='_blank' style='color: #0000FF; text-decoration: underline; cursor: pointer;'>İnstagram hesabımda</a> <span style='color: #0000FF;'>retro içerikler</span> paylaşıyorum. Ayrıca <a href='https://www.youtube.com/@erenle_oyun/featured' target='_blank' style='color: #0000FF; text-decoration: underline; cursor: pointer;'>youtube kanalımda</a> da <span style='color: #0000FF;'>oyun yapma tutorialları</span> paylaşıyorum.\n\n<span style='color: #0000FF;'>Müzikle uğraşıyorum.</span> <span style='color: red;'>Rock metal</span> türünde parçalar yazıyorum. Elektro gitar ve bass gitar çalıyorum. 3 ayrı grupta bass gitaristlik yaptım. Şu anda aktif olarak müzikle uğraşmasam da hayatımın önemli bir parçası olmuştur. Hala arada birkaç parça yazıyorum! ¯\\\\_( ͡~ ͜ʖ ͡°)_/¯"
+      },
+      {
+        "id": "skills",
+        "title": "yetenekler.log",
+        "content": "TEKNİK YETENEKLER:\n------------------\n[X] Advanced Unity Engine\n[X] C#, Python\n[X] Algoritma ve Problem Çözme\n[X] JavaScript (ES6+)\n[X] HTML5 & CSS3\n[X] Video Oyun Geliştiricisi\n[ ] Quantum Physics (Yükleniyor...)\n\nDİĞER:\n------------------\n- Video Kurgu (Premiere Pro)\n- Bas Gitar & Ritim Gitar\n- Senaryo Yazarlığı\n- Oyunculuk ????"
+      },
+      {
+        "id": "projects",
+        "title": "projeler.list",
+        "content": "Proje detaylarını görmek için üstlerine tıkla:\n<br><br>\n<span class='project-category'>OYUN PROJELERİ</span>\n<div class='project-link' data-query='dome_metamars'>Dome Metamars</div>\n<div class='project-link' data-query='antlerd’s_song'>Antlerd’s Song</div>\n<div class='project-link' data-query='basilantus'>Basilantus</div>\n<div class='project-link' data-query='cellblock_zero'>Cellblock ZERO</div>\n<div class='project-link' data-query='disport'>Disport</div>\n<div class='project-link' data-query='lucifer’s_bargain'>Lucifer’s Bargain</div>\n<div class='project-link' data-query='pixebit.exe'>Pixebit.exe</div>\n<div class='project-link' data-query='unreal_combat'>Unreal Engine Combat System</div>\n<br>\n<span class='project-category'>İÇERİK & DENEYSEL</span>\n<div class='project-link' data-query='content_creation'>Content Creation & Experimental Projects</div>\n<div class='project-link' data-query='mario_clone'>Mario Paper Clone</div>\n<br>\n<span class='project-category'>YAZILIM & PROTOTİPLEME</span>\n<div class='project-link' data-query='backend_systems'>BACKEND SYSTEMS & MOBILE PROTOTYPING</div>"
+      },
+      {
+        "id": "contact",
+        "title": "iletisim.msg",
+        "content": "Bana ulaşmak için:\n\nEmail: eren@example.com\nDiscord: eren#1234\n\nNot: Lütfen saat 23:00'dan sonra 'Matrix gerçek mi?' diye mesaj atmayın."
+      }
+    ]
+  },
+  "en": {
+    "login": {
+      "title": "Welcome to Minidows95",
+      "role": "Computer Administrator",
+      "password_label": "Password",
+      "shutdown": "Shut Down",
+      "ok": "OK",
+
+      "hint_day1": "İpucu: 1234",
+      "hint_day2": "İpucu: 1234",
+      "hint_day3": "İpucu: 1234",
+      "hint_day4": "İpucu: 1234",
+      "hint_day5": "İpucu: 1234"
+    },
+    "desktop": {
+      "settings": "Settings",
+      "my_computer": "My Computer",
+      "notepad": "About Me",
+      "internet_explorer": "Internet Explorer",
+      "disport": "Disport",
+      "day": ". Day",
+      "paint": "Paint",
+      "doom": "Doom"
+    },
+    "dialog": {
+      "restart_required_title": "Restart Required",
+      "restart_required_message": "The application needs to be restarted for the language settings to take effect. All open windows will be closed.",
+      "ok_button": "OK",
+      "cancel_button": "Cancel"
+    },
+    "start_menu": {
+      "start": "Start",
+      "shutdown": "Shut Down...",
+      "log_off": "Log Off...",
+      "run": "Run...",
+      "help": "Help",
+      "find": "Find",
+      "documents": "Documents",
+      "favorites": "Favorites",
+      "programs": "Programs",
+      "update": "Minidows Update"
+    },
+    "shutdown_screen": {
+      "message": "It's now safe to turn off your computer."
+    },
+    "window_titles": {
+      "settings": "Settings",
+      "notepad": "Notepad",
+      "my_computer": "My Computer",
+      "error": "Error",
+      "internet_explorer": "Internet Explorer",
+      "disport": "Disport",
+      "paint": "Paint - Untitled",
+      "doom": "MS-DOS - DOOM.EXE"
+    },
+    "notifications": {
+      "task_complete": "Task Completed",
+      "new_message": "New Message"
+    },
+    "internet_explorer": {
+      "back": "Back",
+      "refresh": "Refresh",
+      "go": "Go",
+      "address": "Address",
+      "boogle_search": "Boogle Search",
+      "boogle_lucky": "I'm Feeling Lucky",
+      "network_error_title": "Unable to connect",
+      "network_error_message": "Cannot connect to the internet.",
+      "dino_game_instructions": "Press Space to start",
+      "file": "File",
+      "edit": "Edit",
+      "view": "View",
+      "favorites": "Favorites",
+      "help": "Help"
+    },
+    "settings_window": {
+      "legend_appearance": "Appearance",
+      "change_theme": "Change Theme:",
+      "theme_classic": "Minidows 95 Classic",
+      "theme_rose": "Rose",
+      "theme_high_contrast": "High Contrast",
+      "legend_system": "System",
+      "legend_profile": "Profile",
+      "choose_avatar": "Choose Avatar:",
+      "change_language": "Change Language:",
+      "change_pc_name": "Computer Name:",
+      "game_settings": "Game Settings",
+      "auto_typing": "Auto-Typing",
+      "new_game": "New Game:",
+      "new_game_title": "Starting New Game",
+      "new_game_message": "All your progress will be erased and the game will restart. Are you sure?",
+      "new_game_overlay_message": "Starting new game...",
+      "reset": "Reset",
+      "ok_button": "OK",
+      "cancel_button": "Cancel"
+    },
+    "context_menu": {
+      "desktop": {
+        "view": "View",
+        "sort_by": "Sort by",
+        "refresh": "Refresh",
+        "new": "New"
+      },
+      "icon": {
+        "open": "Open",
+        "run_as_admin": "Run as administrator",
+        "cut": "Cut",
+        "copy": "Copy",
+        "delete": "Delete",
+        "properties": "Properties"
+      },
+      "taskbar": {
+        "close": "Close Window"
+      }
+    },
+    "tasks": {
+        "refresh_desktop": "- Right-click on the desktop and use the 'Refresh' option.",
+        "change_theme": "- Open the 'Settings' app and change the theme.",
+        "maximize_and_restore": "- Maximize this window and then restore it.",
+        "change_pc_name": "- Change computer name.",
+        "change_avatar": "- Change computer avatar.",
+
+        "first_hate_or_love": "- Give it your first major cut. Love it or hate it."
+    },
+    "sites": {
+      "boogle_title": "Boogle",
+      "boogle_desc": "The official page on Boogle.",
+      "boogle_maps_title": "Boogle Maps",
+      "boogle_translate_title": "Boogle Translate - Translation Service",
+      "boogle_news_title": "Boogle News",
+      "boogle_service_desc": "A Boogle service.",
+      "youview_title": "YouView - Share your videos",
+      "youview_desc": "The official page on YouView.",
+      "youview_music_title": "YouView Music - Listen to Music",
+      "youview_gaming_title": "YouView Gaming - Live Game Streams",
+      "generic1_title": "Latest news about {query}",
+      "generic_desc_title1": "Read the most up-to-date news, breaking developments, and special analysis on {query} instantly.",
+      "generic2_title": "Does {query} really exist?",
+      "generic_desc_title2": "We delve deep into the mysteries and conspiracy theories surrounding {query}. The truth is out there, and we've sworn to find it. Join us.",
+      "generic3_title": "What do you think about {query}? Am I the only one who finds it overrated?",
+      "generic_desc_title3": "Join the discussion on our forum. Share your honest opinions about {query} and see what others think.",
+      "generic4_title": "Become a {query} expert in 10 steps",
+      "generic_desc_title4": "Our comprehensive guide will take you from beginner to pro. Master {query} with these easy-to-follow steps.",
+      "generic5_title": "{query} - Wikipedia, the free encyclopedia",
+      "generic_desc_title5": "The complete encyclopedia article on {query}, covering its history, significance, and related topics.",
+      "generic6_title": "Shopping results for {query}",
+      "generic_desc_title6": "Find the best deals, compare prices, and read reviews for {query} from thousands of online stores.",
+      "generic7_title": "Official {query} Fan Club",
+      "generic_desc_title7": "The number one place for fans. Get exclusive content, join community events, and connect with other enthusiasts.",
+      "generic8_title": "Why is everyone talking about {query}?",
+      "generic_desc_title8": "Man, I keep hearing {query} this, {query} that... My ex was a {query} fanatic... So is my mom, wait, is my mom your ex?.. How the hell did we find each other on a {query} page!",
+      "generic9_title": "The most popular posts about {query}",
+      "generic_desc_title9": "See the most liked, shared, and commented-on social media posts and viral content related to {query}.",
+      "generic10_title": "Academic articles and research on {query}",
+      "generic_desc_title10": "Access peer-reviewed papers, scientific studies, and in-depth academic research on the subject of {query}.",
+      "generic11_title": "A serious review of {query}. NO JOKES!",
+      "generic_desc_title11": "No jokes this time. We will review the subject of {query} with all our seriousness... If you're going to make a joke, get off this site!",
+      "generic12_title": "{query} symptoms and treatment",
+      "generic_desc_title12": "Learn about the common symptoms, causes, and treatment options for {query} from trusted medical sources.",
+      "generic13_title": "Learn {query}: A Comprehensive Video Course",
+      "generic_desc_title13": "Enroll in our video course to get a complete education on {query}, taught by leading industry experts.",
+      "generic14_title": "What is {query} telling us? - We don't know either...",
+      "generic_desc_title14": "{query} is the one topic that always confuses us. We ask the questions, but we don't have the answers either. I think...",
+      "generic15_title": "{query} stock price and market data",
+      "generic_desc_title15": "Get real-time stock quotes, historical data, financial charts, and market analysis for {query}.",
+      "generic16_title": "Best hotels and travel guide for {query}",
+      "generic_desc_title16": "Plan your perfect trip. Find top-rated hotels, must-see attractions, and insider tips for your visit.",
+      "generic17_title": "Download {query}. Safe Download. Virus-Free Download. Download Now. Download Fast. Download Daily. Download...",
+      "generic_desc_title17": "The official and secure source to download {query}. Always updated to the latest version. 100% free of viruses and malware. I SWEAR THERE'S NO VIRUS. PRESS THE DOWNLOAD BUTTON ONCE, YOU WON'T PRESS IT A SECOND TIME.",
+      "generic18_title": "The most delicious {query} recipes! We have the best recipe!",
+      "generic_desc_title18": "Tired of mediocre recipes? Ours is tested, perfected, and guaranteed to be the best {query} you've ever tasted!",
+      
+      "dome_metamars_title": "Dome Metamars",
+      "dome_metamars_desc": "A blockchain-based survival and city-building simulation set in a Mars colony. Includes project details and the development process.",
+      "dome_metamars_subtitle": "Blockchain Based City Building Simulator",
+      
+      "dome_metamars_summary_title": "Project Summary",
+      "dome_metamars_summary_text": "Joined a team at Middle East Technical University (METU) to develop a Blockchain based city building simulator. Served as the client core developer, responsible for the shop system, road generation algorithms, terrain manipulation, and the day/night cycle. This was a major production selected for the Google Game Startup program and received an integration offer from Microsoft for Azure services. Shelved after 1.5 years of active development.",
+      
+      "dome_metamars_mechanics_title": "Developed Mechanics",
+      "dome_metamars_mechanics_list": "<li>Shop System</li><li>Road Generation Algorithms</li><li>Terrain Manipulation</li><li>Day/Night Cycle</li>",
+      
+      "dome_metamars_achievements_title": "Achievements & Status",
+      "dome_metamars_status": "Status: Cancelled",
+      
+      "dome_metamars_link_site": "[ Go to Official Site ]",
+      "dome_metamars_link_video": "[ Watch Youtube Demo ]",
+
+
+      "antlerds_song_title": "Antlerd’s Song",
+      "antlerds_song_desc": "Our character, an anomaly in a race deaf to music and rhythm, embarks on an adventure to create music. A story-driven rhythm and adventure game.",
+      "antlerds_song_subtitle": "Story-Driven Rhythm & Bullet Hell",
+      
+      "antlerds_song_summary_title": "Project Story",
+      "antlerds_song_summary_text": "I single-handedly developed the prototype and composed the music for this story-driven Bullet Hell game. I converted the game's songs into JSON format based on notes and timing, utilizing this data to generate rhythmic attack patterns.",
+      
+      "antlerds_song_mechanics_title": "Technical Details",
+      "antlerds_song_mechanics_list": "<li>Original Music Composition & Integration</li><li>JSON Based Rhythm System</li><li>Bullet Hell Mechanics</li><li>Storytelling</li>",
+      
+      "antlerds_song_github_text": "You can check out the GitHub page to examine the rhythm-based object creation mechanic.",
+      "antlerds_song_link_github": "[ Go to GitHub Repo ]",
+
+
+      
+      "basilantus_title": "Basilantus",
+      "basilantus_desc": "Pursuing entities that abducted our sibling to another universe, we arrive in the realm of Basilantus. A puzzle and exploration-oriented 2D/3D platformer.",
+      "basilantus_subtitle": "Stylized RPG Prototype",
+      
+      "basilantus_main_text": "Developed a tangible prototype for a stylized RPG. While I collaborated with a team on the game design document and narrative, I handled the entire technical implementation solo.",
+      
+      "basilantus_feat_grid_title": "Grid Optimization",
+      "basilantus_feat_grid_desc": "Programmed an optimized grid loading system that dynamically loads and unloads map sections based on player position to enhance performance.",
+      
+      "basilantus_feat_dialogue_title": "Dialogue System",
+      "basilantus_feat_dialogue_desc": "Implemented a robust dialogue system supporting rich text tags. Features include pauses based on punctuation and custom text animations (shake, wave, color changes) to convey emotion.",
+      
+      "basilantus_feat_combat_title": "Combat System",
+      "basilantus_feat_combat_desc": "Designed a real time combat system featuring light and heavy attack combos. Utilized DOTween for smooth sword animations and impact feel.",
+
+
+
+      "cellblock_zero_title": "Cellblock ZERO",
+      "cellblock_zero_desc": "We play as a guard for a corporation imprisoning mutants. We listen to their stories and determine their guilt or innocence.",
+
+
+      
+      "disport_title": "Disport",
+      "disport_desc": "An interactive visual novel and operating system simulation game with a Windows 95 aesthetic, running entirely in the browser.",
+      "disport_subtitle": "Web-Based Operating System Simulation",
+      
+      "disport_summary_title": "About The Project",
+      "disport_summary_text": "Disport OS is an interactive portfolio project that brings the Windows 95 experience to the browser using modern web technologies. Developed entirely with Vanilla JavaScript without any frameworks. It features a custom-written Window Manager, Virtual File System, and an Event-Driven architecture. This portfolio site was also built upon the foundations of this game.",
+      
+      "disport_feat_chat_title": "Interactive Storytelling (Messaging)",
+      "disport_feat_chat_desc": "Real-time messaging simulation with fictional characters (NPCs) via the Disport app. Non-linear story flow created using JSON-based dialogue trees.",
+      
+      "disport_feat_task_title": "Dynamic Task System",
+      "disport_feat_task_desc": "Dynamic task mechanics integrated into the Notepad app. Players can track new and completed tasks in a 'check-list' format in real-time as the story progresses.",
+      
+      "disport_tool_title": "Dev Tool: Visual Dialogue Editor",
+      "disport_tool_desc": "Complex dialogue trees within Disport OS are managed by a custom-developed node-based JSON editor.",
+      "disport_tool_link": "[ Inspect ]",
+
+      "disport_link_repo": "[ View Source Code ]",
+
+
+      
+      "dialogue_editor_title": "Visual Dialogue Editor",
+      "dialogue_editor_subtitle": "Node-Based JSON Dialogue Tool",
+      
+      "dialogue_editor_summary_title": "Project Goal",
+      "dialogue_editor_summary_text": "A browser-based visual editor developed to manage complex and branching dialogue structures in games (like Disport OS). Built on LiteGraph.js, this tool allows creating dialogue trees via drag-and-drop and converting them into optimized JSON format suitable for game engines.",
+      
+      "dialogue_editor_arch_title": "Code Architecture",
+      "dialogue_editor_arch_nodes": "nodes.js: Custom Node Types (Start, Dialogue, Branch) and Widget management.",
+      "dialogue_editor_arch_io": "io.js: Algorithm that recursively traverses the graph structure to generate clean JSON output.",
+      "dialogue_editor_arch_state": "state.js: Global language and variable management (State Management).",
+      
+      "dialogue_editor_link_github": "[ View GitHub Repo ]",
+
+      "dialogue_editor_home_title": "Visual Dialogue Editor - Documentation",
+      "dialogue_editor_home_desc": "Technical documentation for the visual editor based on LiteGraph.js, developed to manage in-game dialogue systems.",
+      "dialogue_editor_btn_nodes": "Nodes",
+      "dialogue_editor_btn_state": "State",
+      "dialogue_editor_btn_io": "IO",
+      "dialogue_editor_btn_ui": "UI",
+      "dialogue_editor_btn_app": "App",
+
+      "dialogue_doc_nodes_title": "Nodes.js Module",
+      "dialogue_doc_nodes_intro": "Defines all custom node types used in the editor. Built on LiteGraph.js, these structures include dynamic widget management and state integration.",
+
+      "dialogue_doc_node_start_title": "Start Node",
+      "dialogue_doc_node_start_desc": "Entry point of the dialogue flow. Defines the NPC name and creates a green start block.",
+
+      "dialogue_doc_node_dialogue_title": "Dialogue Node",
+      "dialogue_doc_node_dialogue_desc": "The most comprehensive node in the editor. Contains mechanisms for multi-language support, image definition, and dynamic choice addition. Updates output pins and widgets in real-time via 'updateChoicesUI'.",
+
+      "dialogue_doc_node_branch_title": "Branch Node",
+      "dialogue_doc_node_branch_desc": "Controls in-game variables (Attributes). Branches the flow to True or False based on the selected operator (==, >, < etc.).",
+
+      "dialogue_doc_node_merge_title": "Merge Node",
+      "dialogue_doc_node_merge_desc": "Used to merge separated dialogue branches into a single point. Input pins can be dynamically added or removed.",
+
+      "dialogue_doc_node_end_title": "End Node",
+      "dialogue_doc_node_end_desc": "Terminates a dialogue branch. Visualized in red.",
+
+      "dialogue_doc_node_set_choice_title": "Set Choice Node",
+      "dialogue_doc_node_set_choice_desc": "Saves a player's choice or variable into the state. For example, used to assign 'Rock' value to 'Music Preference' category.",
+
+      "dialogue_doc_node_branch_choice_title": "Branch Choice Node",
+      "dialogue_doc_node_branch_choice_desc": "Routes the flow based on a previously saved choice (Set Choice). Automatically converts all possibilities in the selected category into output pins.",
+
+      "dialogue_doc_io_title": "IO.js Module",
+      "dialogue_doc_io_intro": "Manages the serialization (Export) and deserialization (Import) of the node graph. Converts the visual graph into an optimized JSON format suitable for the game engine.",
+
+      "dialogue_doc_func_export_title": "exportGraphToJSON",
+      "dialogue_doc_func_export_desc": "Scans all nodes on LiteGraph, analyzes their properties and connections (edges). Generates a clean JSON output using a flat structure instead of recursion.",
+
+      "dialogue_doc_func_load_title": "loadGraphFromJSON",
+      "dialogue_doc_func_load_desc": "Clears the current graph and processes the provided JSON data. Places nodes according to their coordinates, restores their properties, and re-establishes connections.",
+
+
+      "dialogue_doc_state_title": "State.js Module",
+      "dialogue_doc_state_intro": "Centrally manages the application's global state, the LiteGraph instance, and project settings (languages, attributes).",
+
+      "dialogue_doc_state_graph_title": "Graph Initialization",
+      "dialogue_doc_state_graph_desc": "LiteGraph and Canvas instances are created and exported here. All nodes are added to this 'graph' object.",
+
+      "dialogue_doc_state_data_title": "Global Data Structures",
+      "dialogue_doc_state_data_desc": "Languages, character attributes, and choice pools used throughout the project are stored here.",
+
+      "dialogue_doc_state_funcs_title": "State Modifiers (Setters)",
+      "dialogue_doc_state_funcs_desc": "Helper functions used to update the global state when loading data from JSON. Clears and refills arrays to preserve references.",
+
+      "dialogue_doc_state_preview_title": "Preview Updater",
+      "dialogue_doc_state_preview_desc": "A placeholder object used to update the JSON preview when the UI or data changes. Its actual function is assigned in app.js.",
+
+      "dialogue_editor_app_ui_title": "Application & UI (App & UI)",
+      "dialogue_editor_app_ui_desc": "You can check the source codes for a detailed review of application initialization, event listeners, and interface interactions (UI Logic).",
+      "dialogue_editor_btn_repo": "[ Go to GitHub Repo ]",
+
+
+      
+      "lucifers_bargain_title": "Lucifer’s Bargain",
+      "lucifers_bargain_desc": "A dark-themed puzzle game where we strike a deal with the devil and cast spells to resurrect our lover.",
+      
+      "pixebit_title": "Pixebit.exe",
+      "pixebit_desc": "Viruses have infested the universe, and we attempt to restore order by collecting files. A 2D platformer.",
+      
+      "unreal_combat_title": "Unreal Engine Combat System",
+      "unreal_combat_desc": "An advanced melee combat and combo mechanics prototype developed with Unreal Engine 5.",
+      
+      "content_creation_title": "Content Creation & Experimental",
+      "content_creation_desc": "A collection of video editing, game development, and experimental interactive art projects.",
+      
+      "mario_clone_title": "Mario Paper Clone",
+      "mario_clone_desc": "A technical demo recreating the Paper Mario visual style within Unreal Engine.",
+      
+      "backend_systems_title": "Backend Systems & Mobile Prototyping",
+      "backend_systems_desc": "Backend architectures and mobile application prototypes developed using Node.js, Python, and C#."
+    },
+    "youview": {
+      "search": "Search",
+      "home": "Home",
+      "trending": "Trending",
+      "subscriptions": "Subscriptions",
+      "library": "Library",
+      "history": "History",
+      "music": "Music",
+      "sports": "Sports",
+      "gaming": "Gaming",
+      "recommended_videos": "Recommended Videos",
+      "views": "views",
+      "search_results_for": "Search Results for \"{query}\""
+    },
+    "youview_channels": {
+      "channel1": "Nostalgia Box",
+      "channel2": "90s Music Archive",
+      "channel3": "Retro Gaming TV",
+      "channel4": "TechnoTime"
+    },
+    "disport_ui": {
+      "direct_messages_header": "DIRECT MESSAAGES",
+      "online_header": "ONLINE",
+      "welcome_message": "Select chat.",
+      "activity_playing": "Playing:",
+      "activity_listening": "Listening:",
+      "typing_indicator": "{name} is typing...",
+      "read_only_chat": "[You can only read this chat.]",
+      "npc_not_talking": "[{name} doesn't want to talk today.]",
+      "status_online": "Online",
+      "status_offline": "Offline",
+      "search_title": "Search",
+      "search_placeholder": "Search keyword...",
+      "search_results_found": "{count} results found"
+    },
+    "disport_friends_desc": {
+      "alice_desc": "I am locked within the box I built from the inside out.",
+      "layla_desc": "and collapsed there on the front steps I wailed",
+      "ron_desc": "BOAAAAA",
+      "casey_desc": "Official"
+    },
+    "my_computer": {
+      "local_disk": "Local Disk",
+      "select_item_desc": "Select an item to view its description.",
+      "objects_count": "objects",
+      "type_local": "Local Disk",
+      "total_size": "Total Size",
+      "free_space": "Free Space",
+      "access_denied": "E:\\Access is denied. Please contact administrator.",
+      "insert_disk_error": "Device is not ready."
+    },
+    "paint": {
+      "file": "File",
+      "edit": "Edit",
+      "view": "View",
+      "image": "Image",
+      "colors": "Colors",
+      "help": "Help",
+      "tool_brush": "Brush",
+      "tool_eraser": "Eraser",
+      "tool_rect": "Rectangle",
+      "clear": "Clear",
+      "size": "Size",
+      "clear_confirm": "Are you sure you want to clear the image?"
+    },
+    "portfolio_content": [
+      {
+        "id": "bio",
+        "title": "about_me.txt",
+        "content": "Hello visitor, I'm Eren Akcakaya!\n\nI'm 23 years old.\n\nMy life changed in high school after I played <span style='color: red;'>Undertale</span> for the first time and learned that this game was <span style='color: #0000FF;'>made (mostly) by a single person.</span> I was so mesmerized that such an impactful game could be created by just one person that I wanted to make games and get involved with software myself. I've always had an interest in technology since I was a kid, but this was the first time I wanted to dive in this deep.\n\nLet's face it, aren't <span style='color: #0000FF;'>old-school tech aesthetics and non-minimalist UIs</span> just more interesting? ᕙ(⇀‸↼‶)ᕗ\n\nI was in the foreign language track in high school, and I had no dreams regarding STEM fields like math or physics. But as I became interested in software, I stopped focusing on my language classes and pivoted towards the science and math side. I enrolled in <span style='color: #0000FF;'>Ankara University's Computer Programming department</span> and graduated with a <span style='color: #0000FF;'>3.6/4 GPA.</span> Yes, I'm proud of working hard on a subject I love! Afterwards, I entered the <span style='color: #0000FF;'>Physics department at Eskişehir Technical University</span>. I am still studying there, but I plan to <span style='color: #0000FF;'>advance my career in software</span> after I finish the program.\n\nᕕ༼⌐■-■༽ᕗ\n\nI won't dive deep into projects in the \"about_me.txt\" section, but I can touch on them briefly. [You can check out the <span style='color: #0000FF;'>projects.list</span> file ╰ (´꒳`) ╯ ]\n\nWhile studying Computer Programming, I gained my first serious work experience with a startup team I met at Middle East Technical University. It was a <span style='color: #0000FF;'>blockchain-based city-building game.</span>\n\nI <span style='color: #0000FF;'>participated in Game Jams,</span> joined teams of strangers, had a blast, and created projects together.\n\nI also <span style='color: #0000FF;'>worked on my solo projects...</span> [Apart from a few demos, they haven't been published yet, but they will be soon! Maybe even this site is a sign????? (~_^) ]\n\nDid I mention that I worked as a <span style='color: red;'>Unity Engine</span> instructor? I taught <span style='color: red;'>Unity Engine Basics</span> to a class of <span style='color: #0000FF;'>14 students aged 7-17</span> and guided them in creating projects.\n\nI'd like to talk about my hobbies outside of software.\n\nI share <span style='color: #0000FF;'>retro content</span> on my <a href='https://www.instagram.com/erentheakcakaya/' target='_blank' style='color: #0000FF; text-decoration: underline; cursor: pointer;'>Instagram account</a>. I also share <span style='color: #0000FF;'>game development tutorials</span> on my <a href='https://www.youtube.com/@erenle_oyun/featured' target='_blank' style='color: #0000FF; text-decoration: underline; cursor: pointer;'>YouTube channel</a>.\n\nI'm involved in <span style='color: #0000FF;'>music.</span> I write songs in the <span style='color: red;'>Rock metal</span> genre. I play electric and bass guitar. I played bass in 3 different bands. Even though I'm not actively making music right now, it has always been a significant part of my life. I still write a few songs every now and then! ¯\\\\_( ͡~ ͜ʖ ͡°)_/¯"
+      },
+      {
+        "id": "skills",
+        "title": "skills.log",
+        "content": "TECHNICAL SKILLS:\n------------------\n[X] Advanced Unity Engine\n[X] C#, Python\n[X] Algorithms & Problem Solving\n[X] JavaScript (ES6+)\n[X] HTML5 & CSS3\n[X] Video Game Development\n[ ] Quantum Physics (Loading...)\n\nOTHER:\n------------------\n- Video Editing (Premiere Pro)\n- Bass Guitar & Rhythm Guitar\n- Screenwriting\n- Acting ????"
+      },
+      {
+        "id": "projects",
+        "title": "projects.list",
+        "content": "Click on projects to see details:\n<br><br>\n<span class='project-category'>GAME PROJECTS</span>\n<div class='project-link' data-query='dome_metamars'>Dome Metamars</div>\n<div class='project-link' data-query='antlerd’s_song'>Antlerd’s Song</div>\n<div class='project-link' data-query='basilantus'>Basilantus</div>\n<div class='project-link' data-query='cellblock_zero'>Cellblock ZERO</div>\n<div class='project-link' data-query='disport'>Disport</div>\n<div class='project-link' data-query='lucifer’s_bargain'>Lucifer’s Bargain</div>\n<div class='project-link' data-query='pixebit.exe'>Pixebit.exe</div>\n<div class='project-link' data-query='unreal_combat'>Unreal Engine Combat System</div>\n<br>\n<span class='project-category'>CONTENT & EXPERIMENTAL</span>\n<div class='project-link' data-query='content_creation'>Content Creation & Experimental Projects</div>\n<div class='project-link' data-query='mario_clone'>Mario Paper Clone</div>\n<br>\n<span class='project-category'>SOFTWARE & PROTOTYPING</span>\n<div class='project-link' data-query='backend_systems'>BACKEND SYSTEMS & MOBILE PROTOTYPING</div>"
+      },
+      {
+        "id": "contact",
+        "title": "contact.msg",
+        "content": "To reach me:\n\nEmail: eren@example.com\nDiscord: eren#1234\n\nNote: Please don't text me asking 'Is the Matrix real?' after 11 PM."
+      }
+    ]
+  }
+}

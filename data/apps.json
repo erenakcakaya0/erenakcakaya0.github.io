@@ -1,0 +1,80 @@
+[
+  {
+    "id": "app_settings",
+    "name_key": "desktop.settings",
+    "icon": "assets/icons/settings.png",
+    "window": {
+      "title_key": "window_titles.settings",
+      "default_width": 400,
+      "default_height": 300,
+      "content_html_file": "apps/settings.html",
+      "canMaximize": false,
+      "allowMultipleInstances": false
+    }
+  },
+  {
+    "id": "app_my_computer",
+    "name_key": "desktop.my_computer",
+    "icon": "assets/icons/my_computer.png",
+    "window": {
+      "title_key": "window_titles.my_computer",
+      "default_width": 700,
+      "default_height": 500,
+      "content_html_file": "apps/my_computer.html",
+      "canMaximize": true,
+      "allowMultipleInstances": false
+    }
+  },
+  {
+    "id": "app_notepad",
+    "name_key": "desktop.notepad",
+    "icon": "assets/icons/notepad.png",
+    "window": {
+      "title_key": "window_titles.notepad",
+      "default_width": 600,
+      "default_height": 450,
+      "content_html_file": "apps/notepad.html",
+      "canMaximize": true,
+      "allowMultipleInstances": false
+    }
+  },
+  {
+  "id": "app_internet_explorer",
+  "name_key": "desktop.internet_explorer",
+  "icon": "assets/icons/internet_explorer.png",
+  "window": {
+    "title_key": "window_titles.internet_explorer",
+    "default_width": 800,
+    "default_height": 600,
+    "content_html_file": "apps/internet-explorer.html",
+    "canMaximize": true,
+    "allowMultipleInstances": true
+    }
+  },
+  {
+    "id": "app_paint",
+    "name_key": "desktop.paint",
+    "icon": "assets/icons/paint.png",
+    "window": {
+      "title_key": "window_titles.paint",
+      "default_width": 640,
+      "default_height": 480,
+      "content_html_file": "apps/paint.html",
+      "canMaximize": false,
+      "allowMultipleInstances": false
+    }
+  },
+  {
+    "id": "app_doom",
+    "name_key": "desktop.doom",
+    "icon": "assets/icons/doom.png",
+    "window": {
+      "title_key": "window_titles.doom",
+      "default_width": 670,
+      "default_height": 470,
+      "content_html_file": "apps/doom.html",
+      "canMaximize": false,
+      "allowMultipleInstances": false
+    }
+  }
+]

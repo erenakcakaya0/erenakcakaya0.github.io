@@ -1,0 +1,63 @@
+<div class="paint-app-container">
+    <div class="ie-menu-bar">
+        <span class="ie-menu-item" data-lang-key="paint.file">Dosya</span>
+        <span class="ie-menu-item" data-lang-key="paint.edit">Düzenle</span>
+        <span class="ie-menu-item" data-lang-key="paint.view">Görünüm</span>
+        <span class="ie-menu-item" data-lang-key="paint.image">Resim</span>
+        <span class="ie-menu-item" data-lang-key="paint.colors">Renkler</span>
+        <span class="ie-menu-item" data-lang-key="paint.help">Yardım</span>
+    </div>
+
+    <div class="paint-body">
+        <div class="paint-toolbar-container">
+            <div class="paint-toolbar-grid">
+                <button class="paint-tool tool-select-free" data-tool="select-free" title="Serbest Seçim"></button>
+                <button class="paint-tool tool-select" data-tool="select" title="Seçim"></button>
+                
+                <button class="paint-tool tool-eraser" data-tool="eraser" title="Silgi"></button>
+                <button class="paint-tool tool-bucket" data-tool="bucket" title="Renkle Doldur"></button>
+                
+                <button class="paint-tool tool-eyedropper" data-tool="eyedropper" title="Renk Seç"></button>
+                <button class="paint-tool tool-zoom" data-tool="zoom" title="Büyüteç"></button>
+                
+                <button class="paint-tool tool-pencil" data-tool="pencil" title="Kalem"></button>
+                <button class="paint-tool tool-brush active" data-tool="brush" title="Fırça"></button>
+                
+                <button class="paint-tool tool-spray" data-tool="spray" title="Sprey"></button>
+                <button class="paint-tool tool-text" data-tool="text" title="Metin"></button>
+                
+                <button class="paint-tool tool-line" data-tool="line" title="Çizgi"></button>
+                <button class="paint-tool tool-curve" data-tool="curve" title="Eğri"></button>
+                
+                <button class="paint-tool tool-rect" data-tool="rectangle" title="Dikdörtgen"></button>
+                <button class="paint-tool tool-polygon" data-tool="polygon" title="Çokgen"></button>
+                
+                <button class="paint-tool tool-ellipse" data-tool="ellipse" title="Elips"></button>
+                <button class="paint-tool tool-roundrect" data-tool="roundrect" title="Yuvarlak Dikdörtgen"></button>
+            </div>
+
+            <div class="paint-separator"></div>
+            
+            <div class="paint-size-container">
+                <div style="font-size:10px; margin-bottom:2px;" data-lang-key="paint.size">Boyut</div>
+                <input type="range" id="paint-size" min="1" max="20" value="3" style="width: 50px;">
+            </div>
+        </div>
+
+        <div class="paint-canvas-area">
+            <canvas id="paint-canvas" width="640" height="480"></canvas>
+        </div>
+    </div>
+
+    <div class="paint-statusbar">
+        <div class="current-colors">
+            <div id="paint-secondary-color-display"></div>
+            <div id="paint-primary-color-display"></div>
+        </div>
+
+        <div class="color-palette"></div>
+        
+        <div style="flex-grow: 1;"></div>
+        <button id="paint-clear-btn" data-lang-key="paint.clear">Temizle</button>
+    </div>
+</div>

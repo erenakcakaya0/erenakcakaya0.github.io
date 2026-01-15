@@ -1,0 +1,16 @@
+/* CSS Değişkenleri - Varsayılan Tema (Windows 95 Klasik) */
+:root {
+    --bg-color: #C0C0C0;
+    --wallpaper-color: #008080;
+    --text-color: #000000;
+    --text-inverted-color: #FFFFFF;
+    --border-light-color: #FFFFFF;
+    --border-dark-color: #808080;
+    --active-title-bg: #000080;
+    --active-title-text: #FFFFFF;
+    --inactive-title-bg: #808080;
+    --inactive-title-text: #C0C0C0;
+    --selected-bg: #000080;
+    --selected-text: #FFFFFF;
+    --content-bg: #FFFFFF; /* Pencere içeriği gibi beyaz alanlar */
+}

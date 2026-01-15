@@ -1,0 +1,85 @@
+.window {
+    position: absolute;
+    background-color: var(--bg-color);
+    border: 2px solid;
+    border-color: var(--border-light-color) var(--border-dark-color) var(--border-dark-color) var(--border-light-color);
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+    min-width: 200px;
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+}
+
+.title-bar {
+    background-color: var(--inactive-title-bg);
+    color: var(--inactive-title-text);
+    padding: 3px 5px;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: grab;
+}
+
+.title-bar:active {
+    cursor: grabbing;
+}
+
+.window.active .title-bar {
+    background-color: var(--active-title-bg);
+    color: var(--active-title-text);
+}
+
+.title-bar-text {
+    flex-grow: 1; 
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+
+.window-controls {
+    margin-left: auto; 
+    display: flex;
+}
+
+.window-controls button {
+    width: 20px;
+    height: 20px;
+    background-color: var(--bg-color);
+    border: 2px solid;
+    border-color: var(--border-light-color) var(--border-dark-color) var(--border-dark-color) var(--border-light-color); 
+    margin-left: 2px;
+    padding: 0;
+    font-family: "MS Sans Serif", "Verdana", sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    cursor: pointer;
+    color: var(--text-color);
+}
+
+.window-controls button:active {
+    border-color: var(--border-dark-color) var(--border-light-color) var(--border-light-color) var(--border-dark-color); 
+    border-style: inset;
+}
+
+.content {
+    flex-grow: 1; 
+    background-color: var(--content-bg); 
+    margin: 4px;
+    border: 2px solid;
+    border-color: var(--border-dark-color) var(--border-light-color) var(--border-light-color) var(--border-dark-color);
+    overflow: auto; 
+    color: var(--content-text-color, #000000);
+}
+
+.window.maximized {
+    top: 0 !important;
+    left: 0 !important;
+    width: 100vw !important;
+    height: calc(100vh - 30px) !important; 
+}
+
+.window-controls button:disabled {
+    color: var(--border-dark-color);
+    text-shadow: 1px 1px var(--border-light-color);
+}

@@ -1,0 +1,26 @@
+.avatar-selection {
+    display: flex;
+    gap: 10px;
+    margin-top: 5px;
+}
+.avatar-option {
+    width: 48px;
+    height: 48px;
+    border: 2px outset var(--border-light-color);
+    cursor: pointer;
+    padding: 2px;
+}
+.avatar-option.selected {
+    border-style: inset;
+    background-color: var(--selected-bg);
+}
+
+#dialog-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.35);
+    z-index: 19999;
+}

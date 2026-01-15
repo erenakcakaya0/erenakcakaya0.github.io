@@ -1,0 +1,158 @@
+{
+  "tr": [
+    {
+      "id": "task_1",
+      "content": [
+        { "type": "text", "value": "Hoş Geldin!" },
+        { "type": "text", "value": "" },
+        { "type": "text", "value": "Bu, DisportOS'a ilk adımın. Bu not defterini hem görevlerini takip etmek hem de kendi notlarını almak için kullanabilirsin." },
+        { "type": "text", "value": "" },
+        { "type": "text", "value": "Sağ üstteki 'Yeni Not' (+) butonuna basarak ilk notunu oluşturmayı dene." }
+      ],
+      "isEditable": false,
+      "isDeletable": false
+    },
+    {
+      "id": "task_2",
+      "content": [
+        { "type": "text", "value": "GÖREV: Sistemi Keşfet" },
+        { "type": "text", "value": "" },
+        { "type": "task", "value": "refreshDesktop" },
+        { "type": "task", "value": "changeTheme" },
+        { "type": "task", "value": "maximizeAndRestore" },
+        { "type": "task", "value": "changePCName" },
+        { "type": "task", "value": "changeAvatar" }
+      ],
+      "isEditable": false,
+      "isDeletable": false
+    },
+    {
+      "id": "info_1",
+      "content": [
+        { "type": "text", "value": "Gün Döngüsü" },
+        { "type": "text", "value": "" },
+        { "type": "text", "value": "Minidows95'te gerçek zamanlı bir gün döngüsü bulunmaktadır." },
+        { "type": "text", "value": "" },
+        { "type": "text", "value": "Arkadaşlarınla konuşup Minidows95'i taskbar üzerinden kapattığınızda bir gün biter." },
+        { "type": "text", "value": "" },
+        { "type": "text", "value": "Hangi günde olduğunuzu öğrenmek için taskbar üzerindeki saate farenizi getirin." }
+      ],
+      "isEditable": false,
+      "isDeletable": false
+    },
+    {
+      "id": "task_3",
+      "content": [
+        { "type": "text", "value": "GÖREV: Arkadaşlık" },
+        { "type": "text", "value": "" },
+        { "type": "task", "value": "firstHateOrLove" }
+      ],
+      "isEditable": false,
+      "isDeletable": false
+    },
+    {
+      "id": "doom_tutor",
+      "content": [
+        { "type": "text", "value": "Doom Açma Rehberi." },
+        { "type": "text", "value": "" },
+        { "type": "text", "value": "Dostum lütfen diskimi kırmadan oyunu yükle. Sonrasında bana geri getir. HEDİYE ETMEDİM... ÖDÜNÇ VERDİM..." },
+        { "type": "text", "value": "" },
+        { "type": "text", "value": "Minidows95'te Doom oynamak için öncelikle \"Doom\" yazan uygulamayı açmalısın. Bu uygulama, Doom'u başlatmak için bir Launcher'dır." },
+        { "type": "text", "value": "" },
+        { "type": "text", "value": "Doom'u açtıktan sonra, direkt karşına bir soru çıkacak." },
+        { "type": "text", "value": "" },
+        { "type": "text", "value": "\"Which drive to install to?\" Burada C sürücüsünü seçmelisin. C tuşuna tıklayınca seçecek." },
+        { "type": "text", "value": "" },
+        { "type": "text", "value": "\"Enter directory name to copy into\" sorusuna \"Doom\" yazmalısın. (Zaten yazılı gelir.)" },
+        { "type": "text", "value": "" },
+        { "type": "text", "value": "Enter de çıkan soruya da Y tuşuna basarak onayla." },
+        { "type": "text", "value": "Oyun kurulacaktır." },
+        { "type": "text", "value": "" },
+        { "type": "text", "value": "Sonra ayarları yapmanı isteyecek. Tek tek uğraşmak yerine bitene kadar Enter tuşuna bas." },
+        { "type": "text", "value": "İyi eğlenceler!" },
+        { "type": "text", "value": "" },
+        { "type": "text", "value": "Oyunumu geri getir." }
+      ],
+      "isEditable": false,
+      "isDeletable": false
+    }
+  ],
+  "en": [
+    {
+      "id": "task_1",
+      "content": [
+        { "type": "text", "value": "Welcome!" },
+        { "type": "text", "value": "" },
+        { "type": "text", "value": "This is your first step into DisportOS. You can use this notepad to both track your tasks and take your own notes." },
+        { "type": "text", "value": "" },
+        { "type": "text", "value": "Try creating your first note by pressing the 'New Note' (+) button in the top right." }
+      ],
+      "isEditable": false,
+      "isDeletable": false
+    },
+    {
+      "id": "task_2",
+      "content": [
+        { "type": "text", "value": "TASK: Explore the System" },
+        { "type": "text", "value": "" },
+        { "type": "task", "value": "refreshDesktop" },
+        { "type": "task", "value": "changeTheme" },
+        { "type": "task", "value": "maximizeAndRestore" },
+        { "type": "task", "value": "changePCName" },
+        { "type": "task", "value": "changeAvatar" }
+      ],
+      "isEditable": false,
+      "isDeletable": false
+    },
+    {
+      "id": "info_1",
+      "content": [
+        { "type": "text", "value": "Day Cycle" },
+        { "type": "text", "value": "" },
+        { "type": "text", "value": "Minidows95 features a real-time day cycle." },
+        { "type": "text", "value": "" },
+        { "type": "text", "value": "A day ends when you talk to your friends and shut down Minidows95 via the taskbar." },
+        { "type": "text", "value": "" },
+        { "type": "text", "value": "Hover your mouse over the clock on the taskbar to see which day it is." }
+      ],
+      "isEditable": false,
+      "isDeletable": false
+    },
+    {
+      "id": "task_3",
+      "content": [
+        { "type": "text", "value": "TASK: Friends" },
+        { "type": "text", "value": "" },
+        { "type": "task", "value": "firstHateOrLove" }
+      ],
+      "isEditable": false,
+      "isDeletable": false
+    },
+    {
+      "id": "doom_tutor",
+      "content": [
+        { "type": "text", "value": "Doom Setup Guide." },
+        { "type": "text", "value": "" },
+        { "type": "text", "value": "Dude, please install the game without breaking my disk. Bring it back to me afterwards. I DIDN'T GIFT IT... I LENT IT..." },
+        { "type": "text", "value": "" },
+        { "type": "text", "value": "To play Doom in Minidows95, you first need to open the application labeled \"Doom\". This application is a Launcher to start Doom." },
+        { "type": "text", "value": "" },
+        { "type": "text", "value": "After opening Doom, you will immediately face a question." },
+        { "type": "text", "value": "" },
+        { "type": "text", "value": "\"Which drive to install to?\" You must select the C drive here. Pressing the C key will select it." },
+        { "type": "text", "value": "" },
+        { "type": "text", "value": "For the \"Enter directory name to copy into\" prompt, you need to type \"Doom\". (It usually comes pre-filled.)" },
+        { "type": "text", "value": "" },
+        { "type": "text", "value": "Hit Enter, then confirm the question that appears by pressing the Y key." },
+        { "type": "text", "value": "The game will install." },
+        { "type": "text", "value": "" },
+        { "type": "text", "value": "Then it will ask you to adjust settings. Instead of dealing with them one by one, just keep pressing Enter until it finishes." },
+        { "type": "text", "value": "Have fun!" },
+        { "type": "text", "value": "" },
+        { "type": "text", "value": "Bring my game back." }
+      ],
+      "isEditable": false,
+      "isDeletable": false
+    }
+  ]
+}
