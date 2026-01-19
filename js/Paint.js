@@ -23,11 +23,16 @@ DisportOS.Paint = {
         'roundrect': 'crosshair'
     },
 
+    currentScale: 1,
+
     init(container) {
         this.container = container;
         this.canvas = container.querySelector('#paint-canvas');
         this.ctx = this.canvas.getContext('2d');
         
+        this._fitToScreen();
+        window.addEventListener('resize', () => this._fitToScreen());
+
         this.history = [];
         this.historyIndex = -1;
 
@@ -48,10 +53,62 @@ DisportOS.Paint = {
         this._renderPalette();
         
         if (this._globalKeyHandler) document.removeEventListener('keydown', this._globalKeyHandler);
-        if (this._globalMouseUpHandler) window.removeEventListener('mouseup', this._globalMouseUpHandler);
+        if (this._globalMouseUpHandler) {
+            window.removeEventListener('mouseup', this._globalMouseUpHandler);
+            window.removeEventListener('touchend', this._globalMouseUpHandler);
+        }
 
         this._attachEventListeners();
         this._updateCursor();
+    },
+
+    _fitToScreen() {
+        const paintWindow = this.container.closest('.window'); 
+        if (!paintWindow) return;
+
+        const paintInterface = this.container.querySelector('.paint-interface') || this.container.children[0];
+        if(!paintInterface) return;
+
+        paintInterface.style.transform = 'none';
+        paintInterface.style.width = 'auto';
+        
+        const originalWidth = paintInterface.scrollWidth || 600;
+        const originalHeight = paintInterface.scrollHeight || 480;
+
+        const screenWidth = window.innerWidth;
+        const screenHeight = window.innerHeight;
+        
+        const availableWidth = screenWidth - 20; 
+        const availableHeight = screenHeight - 60;
+
+        if (originalWidth > availableWidth || originalHeight > availableHeight) {
+            const scaleX = availableWidth / originalWidth;
+            const scaleY = availableHeight / originalHeight;
+            
+            this.currentScale = Math.min(scaleX, scaleY, 1); 
+            
+            paintInterface.style.transformOrigin = 'top left';
+            paintInterface.style.transform = `scale(${this.currentScale})`;
+            
+            const newVisibleWidth = originalWidth * this.currentScale;
+            const newVisibleHeight = originalHeight * this.currentScale;
+
+            this.container.style.width = `${newVisibleWidth}px`;
+            this.container.style.height = `${newVisibleHeight}px`;
+            this.container.style.overflow = 'hidden';
+            
+            if (!paintWindow.classList.contains('maximized')) {
+                paintWindow.style.width = `${newVisibleWidth + 10}px`;
+                paintWindow.style.height = `${newVisibleHeight + 40}px`;
+            }
+
+        } else {
+            this.currentScale = 1;
+            paintInterface.style.transform = 'none';
+            this.container.style.width = '';
+            this.container.style.height = '';
+            this.container.style.overflow = 'auto';
+        }
     },
 
     _saveState() {
@@ -86,11 +143,21 @@ DisportOS.Paint = {
 
     _getMousePos(e) {
         const rect = this.canvas.getBoundingClientRect();
+        
         const scaleX = this.canvas.width / rect.width;
         const scaleY = this.canvas.height / rect.height;
+        
+        let clientX = e.clientX;
+        let clientY = e.clientY;
+
+        if (e.touches && e.touches.length > 0) {
+            clientX = e.touches[0].clientX;
+            clientY = e.touches[0].clientY;
+        }
+
         return {
-            x: (e.clientX - rect.left) * scaleX,
-            y: (e.clientY - rect.top) * scaleY
+            x: (clientX - rect.left) * scaleX,
+            y: (clientY - rect.top) * scaleY
         };
     },
 
@@ -111,6 +178,7 @@ DisportOS.Paint = {
             }
         };
         window.addEventListener('mouseup', this._globalMouseUpHandler);
+        window.addEventListener('touchend', this._globalMouseUpHandler);
 
         this._globalKeyHandler = (e) => {
             const myWindow = this.container.closest('.window');
@@ -123,16 +191,23 @@ DisportOS.Paint = {
         };
         document.addEventListener('keydown', this._globalKeyHandler);
 
+        const startDraw = (e) => {
+            if (e.type === 'touchstart') {
+                // e.preventDefault();
+            }
 
-        canvas.addEventListener('mousedown', (e) => {
-            const isRightClick = e.button === 2;
+            let isRightClick = false;
+            if (e.type === 'mousedown') {
+                isRightClick = e.button === 2;
+            }
+
             this.isDrawing = true;
             const pos = this._getMousePos(e);
             this.startX = pos.x;
             this.startY = pos.y;
             
             if (this.currentTool === 'eyedropper') {
-                this._pickColor(pos, e.button);
+                this._pickColor(pos, isRightClick ? 2 : 0);
                 this.isDrawing = false;
                 return;
             }
@@ -154,16 +229,28 @@ DisportOS.Paint = {
                 this.ctx.moveTo(this.startX, this.startY);
                 this._draw(e, isRightClick);
             }
-        });
+        };
 
-        canvas.addEventListener('mousemove', (e) => {
+        canvas.addEventListener('mousedown', startDraw);
+        canvas.addEventListener('touchstart', startDraw, { passive: false });
+
+        const moveDraw = (e) => {
             if (!this.isDrawing) return;
+            
+            if (e.type === 'touchmove') {
+                e.preventDefault();
+            }
             
             if (this.snapshot) {
                 this.ctx.putImageData(this.snapshot, 0, 0);
             }
-            this._draw(e, e.buttons === 2);
-        });
+            
+            const isRightClick = (e.buttons === 2); 
+            this._draw(e, isRightClick);
+        };
+
+        canvas.addEventListener('mousemove', moveDraw);
+        canvas.addEventListener('touchmove', moveDraw, { passive: false });
         
         const toolsContainer = this.container.querySelector('.paint-toolbar-grid');
         toolsContainer.addEventListener('click', (e) => {
@@ -178,10 +265,10 @@ DisportOS.Paint = {
         });
 
         const palette = this.container.querySelector('.color-palette');
-        palette.addEventListener('mousedown', (e) => {
+        const handleColorPick = (e) => {
             if(e.target.classList.contains('paint-color-swatch')) {
                 const color = e.target.dataset.color;
-                if (e.button === 0) {
+                if (e.type === 'click' || e.button === 0) {
                     this.primaryColor = color;
                     this.container.querySelector('#paint-primary-color-display').style.backgroundColor = color;
                 } else if (e.button === 2) {
@@ -189,7 +276,10 @@ DisportOS.Paint = {
                     this.container.querySelector('#paint-secondary-color-display').style.backgroundColor = color;
                 }
             }
-        });
+        };
+
+        palette.addEventListener('mousedown', handleColorPick);
+
         palette.addEventListener('contextmenu', e => e.preventDefault());
         canvas.addEventListener('contextmenu', e => e.preventDefault());
 

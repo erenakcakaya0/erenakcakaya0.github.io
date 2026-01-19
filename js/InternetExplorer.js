@@ -88,49 +88,13 @@ class Browser {
             const query = url.split('q=')[1];
             this._renderSearchResults(decodeURIComponent(query));
         } else if (url === 'http://www.dome-metamars.com') {
-            fetch('apps/ie-pages/dome-metamars.html')
-                .then(response => response.text())
-                .then(html => {
-                    this.elements.contentArea.innerHTML = html;
-                    DisportOS.helpers.translateElement(this.elements.contentArea);
-                })
-                .catch(err => {
-                    this.elements.contentArea.innerHTML = "<h1>404 - File Not Found</h1>";
-                });
-            return;
+            this._renderSiteDetails('apps/ie-pages/dome-metamars.html');
         } else if (url === 'http://www.antlerds-song.com') {
-            fetch('apps/ie-pages/antlerds-song.html')
-                .then(response => response.text())
-                .then(html => {
-                    this.elements.contentArea.innerHTML = html;
-                    DisportOS.helpers.translateElement(this.elements.contentArea);
-                })
-                .catch(err => {
-                    this.elements.contentArea.innerHTML = "<h1>404 - File Not Found</h1>";
-                });
-            return;
+            this._renderSiteDetails('apps/ie-pages/antlerds-song.html');
         }else if (url === 'http://www.basilantus.net') {
-            fetch('apps/ie-pages/basilantus.html')
-                .then(response => response.text())
-                .then(html => {
-                    this.elements.contentArea.innerHTML = html;
-                    DisportOS.helpers.translateElement(this.elements.contentArea);
-                })
-                .catch(err => {
-                    this.elements.contentArea.innerHTML = "<h1>404 - File Not Found</h1>";
-                });
-            return;
+            this._renderSiteDetails('apps/ie-pages/basilantus.html');
         }else if (url === 'http://www.disport-os.com') {
-            fetch('apps/ie-pages/disport.html')
-                .then(response => response.text())
-                .then(html => {
-                    this.elements.contentArea.innerHTML = html;
-                    DisportOS.helpers.translateElement(this.elements.contentArea);
-                })
-                .catch(err => {
-                    this.elements.contentArea.innerHTML = "<h1>404 - File Not Found</h1>";
-                });
-            return;
+            this._renderSiteDetails('apps/ie-pages/disport.html');
         }else if (url.startsWith('http://www.dialogue-editor.com')) {
             fetch('apps/ie-pages/dialogue-editor.html')
                 .then(response => response.text())
@@ -149,7 +113,7 @@ class Browser {
                     }else if (path === '/state') {
                         this._renderDialogueState(contentDiv);
                     }else {
-                        contentDiv.innerHTML = "<h1>Sayfa Hazırlanıyor...</h1><p>Bu bölüm henüz eklenmedi.</p>";
+                        contentDiv.innerHTML = "<h1>Error!</h1><p>Page not found.</p>";
                     }
 
                     DisportOS.helpers.translateElement(this.elements.contentArea);
@@ -159,6 +123,18 @@ class Browser {
                     this.elements.contentArea.innerHTML = "<h1>404 - File Not Found</h1>";
                 });
             return;
+        }else if (url === 'http://www.cellblock-zero.com') {
+            this._renderSiteDetails('apps/ie-pages/cellblock.html');
+        }else if (url === 'http://www.lucifersbargain.com') {
+            this._renderSiteDetails('apps/ie-pages/lucifers-bargain.html');
+        }else if (url === 'http://www.pixebit.io') {
+            this._renderSiteDetails('apps/ie-pages/pixebit.html');
+        }else if (url === 'http://www.ue-combat-sys.com') {
+            this._renderSiteDetails('apps/ie-pages/unreal-combat.html');
+        }else if (url === 'http://www.eren-content.com') {
+            this._renderSiteDetails('apps/ie-pages/eren-content.html');
+        }else if (url === 'http://www.backend-proto.com') {
+            this._renderSiteDetails('apps/ie-pages/backend-mobile.html');
         }
         
         
@@ -166,12 +142,26 @@ class Browser {
                 const site = Object.values(this.sites).find(s => s.url === url);
                 if (site && site.isVisitable) {
                 const title = DisportOS.helpers.getText(site.titleKey);
-                this.elements.contentArea.innerHTML = `<h1>${title}</h1><p>Bu sayfanın içeriği henüz oluşturulmadı.</p>`;
+                this.elements.contentArea.innerHTML = `<h1>${title}</h1><p>No Find!</p>`;
             } 
             else {
                 this._renderErrorPage();
             }
         }
+    }
+
+    _renderSiteDetails(sitelink)
+    {
+        fetch(sitelink)
+            .then(response => response.text())
+            .then(html => {
+                this.elements.contentArea.innerHTML = html;
+                DisportOS.helpers.translateElement(this.elements.contentArea);
+            })
+            .catch(err => {
+                this.elements.contentArea.innerHTML = "<h1>404 - File Not Found</h1>";
+            });
+        return;
     }
 
     _renderBoogleHome() {
@@ -1080,7 +1070,7 @@ class Browser {
 
             safeCode = safeCode.replace(/(".*?")/g, '<span class="code-string">$1</span>');
             safeCode = safeCode.replace(/\/\/.*$/gm, '<span class="code-comment">$&</span>');
-            safeCode = safeCode.replace(/\/\*\*[\s\S]*?\*\//g, '<span class="code-comment">$&</span>'); // Çok satırlı yorumlar için
+            safeCode = safeCode.replace(/\/\*\*[\s\S]*?\*\//g, '<span class="code-comment">$&</span>');
             safeCode = safeCode.replace(/\b(function|var|let|const|this|return|if|else|new|import|export|delete|for|in|Object|assign)\b/g, '<span class="code-keyword">$1</span>');
             safeCode = safeCode.replace(/\b([A-Z][a-zA-Z0-9_]*)(?=\.)/g, '<span class="code-function">$1</span>');
             safeCode = safeCode.replace(/\b(LGraph|LGraphCanvas|console)\b/g, '<span class="code-function">$1</span>');

@@ -14,7 +14,6 @@ const DisportOS = {
     },
 
     async init() {
-        console.log("DisportOS Başlatılıyor...");
         this.loadSettings();
         this.applySettings();
         this.loadGameState();
@@ -30,12 +29,11 @@ const DisportOS = {
             this.state.languageData = langData;
             this.state.searchFilterData = filterData;
             
-           // this.handleLoginProcess();
-           this.startSession();
+            // this.handleLoginProcess();
+            this.startSession();
 
         } catch (error) {
-            console.error("DisportOS kritik hata:", error);
-            document.body.innerHTML = "<h2 style='color:white; background:blue; padding:20px;'>Sistem Hatası: Veriler yüklenemedi.</h2>";
+            document.body.innerHTML = "<h2 style='color:white; background:blue; padding:20px;'>System Error</h2>";
         }
     },
 
@@ -182,7 +180,7 @@ const DisportOS = {
             });
 
             overlay.querySelector('#btn-shutdown-system').addEventListener('click', () => {
-                console.log("Oturum kapatma iptal edildi.");
+                console.log("??? this not a game bro... you can't shutdown");
                 DisportOS.Dialog.confirm({
                     titleKey: 'dialog.quit_confirm_title',
                     messageKey: 'dialog.quit_confirm_message',
@@ -385,6 +383,42 @@ const DisportOS = {
 
                 iconDiv.appendChild(iconImg);
                 iconDiv.appendChild(iconSpan);
+
+                let touchStartX = 0;
+                let touchStartY = 0;
+                let isIconDragging = false;
+
+                iconDiv.addEventListener('touchstart', (e) => {
+                    const touch = e.touches[0];
+                    touchStartX = touch.clientX;
+                    touchStartY = touch.clientY;
+                    isIconDragging = false;
+                    
+                    DisportOS.desktop.selectIcon(iconDiv);
+                }, { passive: true });
+
+                iconDiv.addEventListener('touchmove', (e) => {
+                    const touch = e.touches[0];
+                    const diffX = Math.abs(touch.clientX - touchStartX);
+                    const diffY = Math.abs(touch.clientY - touchStartY);
+
+                    if (diffX > 5 || diffY > 5) {
+                        isIconDragging = true;
+                    }
+                }, { passive: true });
+
+                iconDiv.addEventListener('touchend', (e) => {
+                    if (!isIconDragging) {
+                        e.preventDefault();
+                        DisportOS.apps.launch(app.id);
+                        
+                        setTimeout(() => {
+                            DisportOS.desktop.clearSelection();
+                        }, 500);
+                    }
+                });
+                // ----------------------------------------
+
                 desktop.appendChild(iconDiv);
             });
         },
@@ -400,8 +434,13 @@ const DisportOS = {
     },
     
     initEventListeners() {
-        console.log("Global Event Listeners Eklendi");
-        
+        const getClientPos = (e) => {
+            if (e.touches && e.touches.length > 0) {
+                return { x: e.touches[0].clientX, y: e.touches[0].clientY };
+            }
+            return { x: e.clientX, y: e.clientY };
+        };
+
         document.addEventListener('mouseup', (e) => {
             const button = e.target.closest('button');
             if (button) button.blur();
@@ -441,61 +480,92 @@ const DisportOS = {
             let selectionBox = null;
             let startX, startY;
 
-            desktop.addEventListener('mousedown', (e) => {
-                if (e.button !== 0 || e.target.closest('.desktop-icon') || e.target.closest('.window')) return;
+            const startSelection = (e) => {
+                if ((e.type === 'mousedown' && e.button !== 0) || 
+                    e.target.closest('.desktop-icon') || 
+                    e.target.closest('.window')) return;
                 
-                startX = e.clientX;
-                startY = e.clientY;
+                // e.preventDefault(); 
 
-                const onFirstMove = (moveEvent) => {
-                    if (Math.abs(moveEvent.clientX - startX) > 5 || Math.abs(moveEvent.clientY - startY) > 5) {
-                        DisportOS.state.isDragging = true; 
-                        if (!moveEvent.ctrlKey && !moveEvent.metaKey) DisportOS.desktop.clearSelection();
-                        
-                        selectionBox = document.createElement('div');
-                        selectionBox.id = 'selection-box';
-                        document.body.appendChild(selectionBox);
-                        
-                        document.removeEventListener('mousemove', onFirstMove);
-                        document.addEventListener('mousemove', onMouseMove);
+                const pos = getClientPos(e);
+                startX = pos.x;
+                startY = pos.y;
+
+                const onMove = (moveEvent) => {
+                    const movePos = getClientPos(moveEvent);
+                    
+                    if (!DisportOS.state.isDragging) {
+                        if (Math.abs(movePos.x - startX) > 5 || Math.abs(movePos.y - startY) > 5) {
+                            DisportOS.state.isDragging = true;
+                            
+                            if (!moveEvent.ctrlKey && !moveEvent.metaKey) DisportOS.desktop.clearSelection();
+                            
+                            selectionBox = document.createElement('div');
+                            selectionBox.id = 'selection-box';
+                            document.body.appendChild(selectionBox);
+                        }
+                    }
+
+                    if (DisportOS.state.isDragging && selectionBox) {
+                        if(moveEvent.type === 'touchmove') moveEvent.preventDefault();
+
+                        const left = Math.min(startX, movePos.x);
+                        const top = Math.min(startY, movePos.y);
+                        const width = Math.abs(startX - movePos.x);
+                        const height = Math.abs(startY - movePos.y);
+
+                        selectionBox.style.left = `${left}px`;
+                        selectionBox.style.top = `${top}px`;
+                        selectionBox.style.width = `${width}px`;
+                        selectionBox.style.height = `${height}px`;
+
+                        document.querySelectorAll('.desktop-icon').forEach(icon => {
+                            if (DisportOS.helpers.isOverlapping(selectionBox, icon)) {
+                                icon.classList.add('selected'); 
+                                DisportOS.state.selectedIcons.add(icon);
+                            } else if (!moveEvent.ctrlKey && !moveEvent.metaKey) {
+                                icon.classList.remove('selected'); 
+                                DisportOS.state.selectedIcons.delete(icon);
+                            }
+                        });
                     }
                 };
 
-                const onMouseMove = (moveEvent) => {
-                    const left = Math.min(startX, moveEvent.clientX);
-                    const top = Math.min(startY, moveEvent.clientY);
-                    const width = Math.abs(startX - moveEvent.clientX);
-                    const height = Math.abs(startY - moveEvent.clientY);
-
-                    selectionBox.style.left = `${left}px`;
-                    selectionBox.style.top = `${top}px`;
-                    selectionBox.style.width = `${width}px`;
-                    selectionBox.style.height = `${height}px`;
-
-                    document.querySelectorAll('.desktop-icon').forEach(icon => {
-                        if (DisportOS.helpers.isOverlapping(selectionBox, icon)) {
-                            icon.classList.add('selected'); DisportOS.state.selectedIcons.add(icon);
-                        } else if (!moveEvent.ctrlKey && !moveEvent.metaKey) {
-                            icon.classList.remove('selected'); DisportOS.state.selectedIcons.delete(icon);
-                        }
-                    });
-                };
-
-                const onMouseUp = () => {
+                const onEnd = () => {
                     if (selectionBox) { selectionBox.remove(); selectionBox = null; }
-                    document.removeEventListener('mousemove', onFirstMove);
-                    document.removeEventListener('mousemove', onMouseMove);
+                    
+                    document.removeEventListener('mousemove', onMove);
+                    document.removeEventListener('mouseup', onEnd);
+                    document.removeEventListener('touchmove', onMove);
+                    document.removeEventListener('touchend', onEnd);
+
+                    setTimeout(() => {
+                        DisportOS.state.isDragging = false;
+                    }, 50);
                 };
 
-                document.addEventListener('mousemove', onFirstMove);
-                document.addEventListener('mouseup', onMouseUp, { once: true });
-            });
+                document.addEventListener('mousemove', onMove);
+                document.addEventListener('mouseup', onEnd);
+                document.addEventListener('touchmove', onMove, { passive: false });
+                document.addEventListener('touchend', onEnd);
+            };
+
+            desktop.addEventListener('mousedown', startSelection);
+            desktop.addEventListener('touchstart', startSelection, { passive: false });
         }
 
         document.addEventListener('contextmenu', (e) => {
             e.preventDefault(); 
             let menuItems = [];
-            const position = { x: e.clientX, y: e.clientY };
+            
+            let clientX = e.clientX;
+            let clientY = e.clientY;
+            if(clientX === undefined && e.touches && e.touches.length > 0) {
+                 clientX = e.touches[0].clientX;
+                 clientY = e.touches[0].clientY;
+            }
+
+            const position = { x: clientX, y: clientY };
             const desktopIcon = e.target.closest('.desktop-icon');
             const taskbarTab = e.target.closest('.task-tab');
 

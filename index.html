@@ -41,3 +41,28 @@
 
 </body>
 </html>
+
+<script>
+        function switchIdeTab(tabName) {
+            // Tüm içerikleri gizle
+            document.getElementById('view-code').classList.remove('active');
+            document.getElementById('view-mobile').classList.remove('active');
+            
+            // Tüm butonların aktifliğini kaldır
+            document.getElementById('tab-btn-code').classList.remove('active');
+            document.getElementById('tab-btn-mobile').classList.remove('active');
+
+            // Seçileni aç
+            document.getElementById('view-' + tabName).classList.add('active');
+            document.getElementById('tab-btn-' + tabName).classList.add('active');
+
+            // Eğer Mobile sekmesine tıklandıysa animasyonu durdur ve badge'i gizle
+            if (tabName === 'mobile') {
+                const mobileBtn = document.getElementById('tab-btn-mobile');
+                mobileBtn.classList.remove('notify-anim');
+                
+                const badge = document.getElementById('mobile-badge');
+                if(badge) badge.style.display = 'none';
+            }
+        }
+    </script>

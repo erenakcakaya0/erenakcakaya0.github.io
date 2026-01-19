@@ -230,7 +230,35 @@
 
       
       "cellblock_zero_title": "Cellblock ZERO",
-      "cellblock_zero_desc": "Mutantları hapseden bir şirketin gardiyanıyız. Mutantların hikayelerini dinleyip suçlu olup olmadıklarına karar veriyoruz.",
+      "cellblock_zero_desc": "Distopik bir gelecekte, yer altındaki canlı bir hapishanenin 'Ayıklayıcısı'sın. Mahkumları kaynak olarak kullanarak hayatta kal.",
+      "cellblock_zero_header_title": "Cellblock ZERO",
+      "cellblock_zero_tagline": "\"Kimsenin seni çok sevmesine izin verme. Yoksa ölürsün.\"",
+      
+      "cellblock_zero_info_genre_label": "TÜR:",
+      "cellblock_zero_info_genre_val": "Politik Korku / Biyo-Yönetim",
+      "cellblock_zero_info_status_label": "DURUM:",
+      "cellblock_zero_info_status_val": "Geliştirme Aşamasında (Solo Dev)",
+      "cellblock_zero_info_platform_label": "PLATFORM:",
+      "cellblock_zero_info_platform_val": "PC (Retro PSX Style)",
+
+      "cellblock_zero_summary_title": "GÖREV TANIMI",
+      "cellblock_zero_summary_text": "Distopik bir gelecekte, yer altındaki canlı bir hapishanenin Ayıklayıcısısın. Görevin sadece mahkumları tutmak değil; onları kaynak (elektrik, savunma, takas) olarak kullanmak.",
+
+      "cellblock_zero_mechanic_1_title": "ÖLÜM ÜÇGENİ VE DENGE",
+      "cellblock_zero_mechanic_1_desc": "Devlet (Otorite), Mafya (Yeraltı) ve Şirket (Biyoteknoloji). İlişkileri daima %30 ile %70 arasında tutmalısın. Aşırı sevgi suikast getirir, nefret ise infaz. Ayrıca hapishane içi dengeyi de korumalısın. Huzur düştüğünde mahkumlar kaçmak için her şeyi yapabilecek duruma gelirler.",
+
+      "cellblock_zero_mechanic_2_title": "BİYO-HASAT VE KAYNAK YÖNETİMİ",
+      "cellblock_zero_mechanic_2_desc": "Mahkumlar sadece suçlu değil, birer kaynaktır. Elektrik için kan, duvarlar için kitin, taretler için kemik hasat et. Mahkumları beslemek için bazı mahkumları feda etmen gerekebilir. Kaynak yönetimi ve ahlaki ikilemler arasında dengeyi bulmalısın. Gelen her mutant suçlu olmayabilir... Ama işine yarıyorsa hapse atmakta ve parçalarını kullanmakta bir sorun var mı?",
+
+      "cellblock_zero_features_title": "ÖZELLİKLER",
+      "cellblock_zero_feat_1": "PSX Retro Estetik: Dithering, CRT efektleri ve karanlık atmosfer.",
+      "cellblock_zero_feat_2": "Mutanların Hikayeleri: Mutantların hikayelerini dinleyebilirsin. İstersen çeşitli makineler ile onların doğru söyleyip söylemediğini test edebilirsin.",
+      "cellblock_zero_feat_3": "Denge ve Üs Geliştirme Sistemi: Yeterli mutantı hasat edersen hapishaneyi geliştirebilir, yeni taretler ve savunma mekanizmaları açabilirsin.",
+
+      "cellblock_zero_visual_caption_1": "Koridor & Mutant Karşılaşması",
+      "cellblock_zero_visual_caption_2": "Hasat Arayüzü",
+      
+      "cellblock_zero_footer_devlog": "[ Geliştirici Günlüklerini Oku (henüz aktif değil) ]",
 
 
 
@@ -329,27 +357,133 @@
 
       "dialogue_editor_app_ui_title": "Uygulama ve Arayüz (App & UI)",
       "dialogue_editor_app_ui_desc": "Uygulamanın başlatılması (Initialization), olay dinleyicileri (Event Listeners) ve arayüz etkileşimleri (UI Logic) hakkında detaylı inceleme yapmak için kaynak kodlarına göz atabilirsiniz.",
-      "dialogue_editor_btn_repo": "[ GitHub Reposuna Git ]",
+      "dialogue_editor_btn_repo": "[ GitHub Reposuna Git (Henüz Aktif Değil) ]",
 
 
 
       "lucifers_bargain_title": "Lucifer’s Bargain",
       "lucifers_bargain_desc": "Sevgilimizi canlandırmak için şeytanla anlaşıp büyüler yaptığımız karanlık temalı bir bulmaca oyunu",
+      "lucifers_bargain_tagline": "\"Aşk fedakarlık ister. Bazen, kelimenin tam anlamıyla.\"",
       
+      "lucifers_bargain_info_genre_label": "TÜR:",
+      "lucifers_bargain_info_genre_val": "Puzzle Horror / Alşimi",
+      "lucifers_bargain_info_status_label": "DURUM:",
+      "lucifers_bargain_info_status_val": "Tamamlandı (Solo Dev)",
+      "lucifers_bargain_info_platform_label": "MOTOR:",
+      "lucifers_bargain_info_platform_val": "Unity",
+
+      "lucifers_bargain_summary_title": "RİTÜEL BAŞLIYOR",
+      "lucifers_bargain_summary_text": "PSX dönemi korku klasiklerinden esinlenen bir bulmaca oyunu. Oyuncular, sevdikleri birini diriltmek için yırtık büyü kitabı sayfalarındaki şifreli ipuçlarını çözmeli ve kazana doğru malzemeleri atmalıdır.",
+
+      "lucifers_bargain_mechanic_title": "KELİME BÜYÜSÜ SİSTEMİ (Word-Spell)",
+      "lucifers_bargain_mechanic_desc": "Yapılmak istenen 4 büyünün baş harfleri ile kelimeler oluşturulur (Love, Hate gibi). Bu büyüleri yapabilmek için o büyünün sayfasını okumalı ve yazan tekerlemeden çıkarımlar yaparak uygun malzemeleri kazana atarak büyüyü yapmanız gerekmektedir.",
+
+      "lucifers_bargain_features_title": "ÖZELLİKLER",
+      "lucifers_bargain_feat_1": "Kriptik Bulmacalar: Sayfaları birleştir, reçeteyi çöz.",
+      "lucifers_bargain_feat_2": "Atmosferik Gerilim: Retro dokular ve tekinsiz ses tasarımı.",
+      "lucifers_bargain_feat_3": "Sistem Tasarımı: Envanter ve kazan kombinasyon mantığı.",
+
+      "lucifers_bargain_cap_gif": "Oynanış: Büyü Hazırlama",
+      "lucifers_bargain_cap_unity": "Unity Sahne Tasarımı",
+      "lucifers_bargain_cap_ingame1": "Mahzen Girişi",
+      "lucifers_bargain_cap_ingame2": "Grimoire (Kitap)",
+
+      "lucifers_bargain_btn_play": "[ Oyunu İndir / İncele ]",
+
+
+
+
       "pixebit_title": "Pixebit.exe",
       "pixebit_desc": "Evrene virüsler musallat olur ve biz de dosyaları toplayarak düzeltmeye çalışırız. 2D platform oyunu.",
+      "pixebit_tagline": "\"Zorlu ve glitchli bir macera.\"",
+      
+      "pixebit_info_genre_label": "TÜR:",
+      "pixebit_info_genre_val": "2D Platformer",
+      "pixebit_info_event_label": "ETKİNLİK:",
+      "pixebit_info_event_val": "Atom Game Jam (72 Saat)",
+      
+      "pixebit_summary_title": "HİKAYE & AMAÇ",
+      "pixebit_summary_text": "Yaşadığı dünyada bozukluklar (glitch) olmaya başladığını gören PixeBit, bu durumu araştırmak için yola çıkar. Bölümleri geçmek ve sistemi onarmak için 5 adet Anti-Virüs dosyası toplaması gereken zorlu bir maceraya atılır.",
+
+      "pixebit_dev_title": "GELİŞTİRME SÜRECİ (Post-Mortem)",
+      "pixebit_dev_text": "İlk kayda değer projem. Atom Game Jam etkinliğinde, rastgele eşleştiğim bir ekiple 72 saatte geliştirildi. Hareket eden platformlar, diyalog sistemi ve toplanabilir eşya (collectible) mekaniklerini ben kodladım. İlk ekip çalışması deneyimim olduğu için benim için 'acemiliği attığım' özel bir projedir.",
+
+      "pixebit_cap_screen1": "Platform Mekaniği",
+      "pixebit_cap_screen2": "Glitch Dünyası",
+
+      "pixebit_btn_video": "[ Oynanış Videosunu İzle ]",
+      "pixebit_btn_itch": "[ Itch.io Sayfasına Git ]",
+
+
+
       
       "unreal_combat_title": "Unreal Engine Combat System",
       "unreal_combat_desc": "Unreal Engine 5 ile geliştirilmiş, gelişmiş yakın dövüş ve kombo mekanikleri prototipi.",
+      "unreal_combat_tagline": "\"Geliştirme becerilerini UE5'e taşıma ve teknik adaptasyon çalışması.\"",
       
-      "content_creation_title": "Content Creation & Experimental",
-      "content_creation_desc": "Video kurgu, oyun yapımı ve deneysel interaktif sanat çalışmaları koleksiyonu.",
+      "unreal_combat_info_type_label": "TÜR:",
+      "unreal_combat_info_type_val": "Teknik Demo / Mekanik",
+      "unreal_combat_info_engine_label": "MOTOR:",
+      "unreal_combat_info_engine_val": "Unreal Engine 5 (Blueprints)",
+      
+      "unreal_combat_summary_title": "TEKNİK ÖZET",
+      "unreal_combat_summary_text": "Geliştirme becerilerini Unreal Engine 5'e taşımak için yapılan teknik bir çalışma. Tam animasyon harmanlama (animation blending), hedef kilitleme (lock-on) ve durum makinesi (state machine) entegrasyonu ile işlevsel bir Dövüş Sistemi uygulandı.",
+
+      "unreal_combat_cap_gif": "Oynanış Döngüsü: Kombo ve Hareket",
+
+      "unreal_combat_video_desc": "Sistemin benzer video demosu:",
+      "unreal_combat_btn_video": "[ UE5 Combat System Video ]",
+
+
+
+      "eren_content_title": "Content Creation & Experimental",
+      "eren_content_desc": "Video kurgu, oyun yapımı ve deneysel interaktif sanat çalışmaları koleksiyonu.",
+      "eren_content_tagline": "\"Mekanik analizleri, eğitimler ve deneysel Ar-Ge projeleri.\"",
+      
+      "eren_content_info_type_label": "KATEGORİ:",
+      "eren_content_info_type_val": "Eğitim / R&D",
+      "eren_content_info_platform_label": "PLATFORM:",
+      "eren_content_info_platform_val": "YouTube",
+
+      "eren_content_summary_title": "İÇERİK ÜRETİMİ & AR-GE",
+      
+      "eren_content_text_main": "YouTube için aktif olarak oyun geliştirme içerikleri ürettim. <a href='#' class='external-link' data-url='https://youtu.be/XCxSDTpj_Es?si=jCZ67wEWmCloxkjS'>Sıra Tabanlı Strateji</a> oyunlarından <a href='#' class='external-link' data-url='https://youtu.be/KkdVDVBUwZ4?si=xK4L-Tgrne2FeWT5'>Undertale Boss Tasarımlarına</a> ve Unity'de <a href='#' class='external-link' data-url='https://www.youtube.com/watch?v=NIOtp1A1HBI&list=PLlj3JZkQQk8neTQQH0iIwck-oLyShgTgV&pp=gAQB'>Spider-Man Dövüş Sistemi</a> eğitimlerine kadar geniş bir yelpazede mekanikler üzerine çalıştım.",
+      
+      "eren_content_text_secondary": "Deneysel bir Ar-Ge projesi olarak, gerçek zamanlı gitar notalarını klavye tuş vuruşlarına eşleyen özel bir <a href='#' class='external-link' data-url='https://youtu.be/OSd7xlTzgJo?si=wM2je9jYjiQ24AnF'>Ses Giriş Sistemi</a> geliştirdim. Bu sistem sayesinde elektro gitar kullanarak Undertale oynadım.",
+      "eren_content_footer_text": "Yukarıda seçili videolardan ekran görüntüleri ekledim. Projeleri daha detaylı incelemek isterseniz <a href='#' class='external-link' data-url='https://www.youtube.com/@erenle_oyun'>kanala buradan ulaşabilirsiniz</a>. (Not: Video içerikleri Türkçedir).",
+
+      "eren_content_cap_guitar": "Deneysel: Gitar ile Oyun Kontrolü",
+      "eren_content_cap_spiderman": "Mekanik: Spider-Man Combat",
+      
+
       
       "mario_clone_title": "Mario Paper Clone",
       "mario_clone_desc": "Paper Mario görselliğini Unreal Engine motorunda yeniden oluşturulmuş teknik demosu.",
       
-      "backend_systems_title": "Backend Systems & Mobile Prototyping",
-      "backend_systems_desc": "Node.js, Python, C# kullanılarak geliştirilmiş mimariler ve mobil uygulama prototipleri."
+      "backend_mobile_title": "Backend Systems & Mobile Prototyping",
+      "backend_mobile_desc": "Geliştirilmiş mimari örneği ve mobil uygulama prototipleri.",
+      "backend_mobile_tagline": "\"Ölçeklenebilir sistem mimarisi ve hyper-casual prototipleme.\"",
+      
+      "backend_mobile_info_stack_label": "TEKNOLOJİ:",
+      "backend_mobile_info_stack_val": "C# / Unity / JSON",
+      "backend_mobile_info_focus_label": "ODAK:",
+      "backend_mobile_info_focus_val": "System Architecture / Mobile UX",
+
+      "backend_mobile_backend_title": "BACKEND SİSTEMLERİ",
+      
+      "backend_mobile_loc_title": "Localization System (Yerelleştirme)",
+      "backend_mobile_loc_desc": "Anahtar-değer çiftlerine dayalı, çalışma zamanında (runtime) metin varlıklarını dinamik olarak değiştiren, yeniden kullanılabilir JSON tabanlı bir yerelleştirme sistemi geliştirdim.",
+      
+      "backend_mobile_serial_title": "Serialization (Kayıt Sistemi)",
+      "backend_mobile_serial_desc": "Oturumlar arasında kalıcı oyun verilerini işlemek için JSON kullanan ölçeklenebilir bir kaydet/yükle sistemi uyguladım.",
+
+      "backend_mobile_proto_title": "MOBİL PROTOTİPLEME",
+      "backend_mobile_proto_desc": "Endüstriyel uygulamalar için hyper-casual prototipler oluşturdum. Bunlar arasında sahte (fake) çok oyunculu fizik tabanlı bir platform oyunu ve bir raf düzenleme oyunu bulunmaktadır.",
+
+      "backend_mobile_cap_proto1": "Fake Multiplayer Physics Platformer",
+      "backend_mobile_cap_proto2": "Shelf Organization Game",
+
+      "backend_mobile_code_header": "LocalizationManager.cs (Önizleme)"
     },
     "youview": {
       "search": "Ara",
@@ -434,12 +568,12 @@
       {
         "id": "projects",
         "title": "projeler.list",
-        "content": "Proje detaylarını görmek için üstlerine tıkla:\n<br><br>\n<span class='project-category'>OYUN PROJELERİ</span>\n<div class='project-link' data-query='dome_metamars'>Dome Metamars</div>\n<div class='project-link' data-query='antlerd’s_song'>Antlerd’s Song</div>\n<div class='project-link' data-query='basilantus'>Basilantus</div>\n<div class='project-link' data-query='cellblock_zero'>Cellblock ZERO</div>\n<div class='project-link' data-query='disport'>Disport</div>\n<div class='project-link' data-query='lucifer’s_bargain'>Lucifer’s Bargain</div>\n<div class='project-link' data-query='pixebit.exe'>Pixebit.exe</div>\n<div class='project-link' data-query='unreal_combat'>Unreal Engine Combat System</div>\n<br>\n<span class='project-category'>İÇERİK & DENEYSEL</span>\n<div class='project-link' data-query='content_creation'>Content Creation & Experimental Projects</div>\n<div class='project-link' data-query='mario_clone'>Mario Paper Clone</div>\n<br>\n<span class='project-category'>YAZILIM & PROTOTİPLEME</span>\n<div class='project-link' data-query='backend_systems'>BACKEND SYSTEMS & MOBILE PROTOTYPING</div>"
+        "content": "Proje detaylarını görmek için üstlerine tıkla:\n<span class='project-category'>OYUN PROJELERİ</span>\n<div class='project-link' data-query='dome_metamars'>Dome Metamars</div>\n<div class='project-link' data-query='antlerd’s_song'>Antlerd’s Song</div>\n<div class='project-link' data-query='basilantus'>Basilantus</div>\n<div class='project-link' data-query='cellblock_zero'>Cellblock ZERO</div>\n<div class='project-link' data-query='disport'>Disport</div>\n<div class='project-link' data-query='lucifer’s_bargain'>Lucifer’s Bargain</div>\n<div class='project-link' data-query='pixebit.exe'>Pixebit.exe</div>\n<div class='project-link' data-query='unreal_combat'>Unreal Engine Combat System</div>\n\n<span class='project-category'>İÇERİK & DENEYSEL</span>\n<div class='project-link' data-query='content_creation'>Content Creation & Experimental Projects</div><br>\n<span class='project-category'>YAZILIM & PROTOTİPLEME</span>\n<div class='project-link' data-query='backend_systems'>BACKEND SYSTEMS & MOBILE PROTOTYPING</div>"
       },
       {
         "id": "contact",
         "title": "iletisim.msg",
-        "content": "Bana ulaşmak için:\n\nEmail: eren@example.com\nDiscord: eren#1234\n\nNot: Lütfen saat 23:00'dan sonra 'Matrix gerçek mi?' diye mesaj atmayın."
+        "content": "Bana ulaşmak için:\n\nEmail: akcakayaeren@outlook.com\nDiscord: erenakcakaya\n\nNot: Lütfen saat 23:00'dan sonra 'Matrix gerçek mi?' diye mesaj atmayın...\n\nYa da atın! ¯\\\\_(ツ)_/¯"
       }
     ]
   },
@@ -665,7 +799,35 @@
 
 
       "cellblock_zero_title": "Cellblock ZERO",
-      "cellblock_zero_desc": "We play as a guard for a corporation imprisoning mutants. We listen to their stories and determine their guilt or innocence.",
+      "cellblock_zero_desc": "In a dystopian future, you are the 'Culler' of a living underground prison. Survive by using prisoners as resources.",
+      "cellblock_zero_header_title": "Cellblock ZERO",
+      "cellblock_zero_tagline": "\"Don't let anyone love you too much. Or you'll die.\"",
+      
+      "cellblock_zero_info_genre_label": "GENRE:",
+      "cellblock_zero_info_genre_val": "Political Horror / Bio-Management",
+      "cellblock_zero_info_status_label": "STATUS:",
+      "cellblock_zero_info_status_val": "In Development (Solo Dev)",
+      "cellblock_zero_info_platform_label": "PLATFORM:",
+      "cellblock_zero_info_platform_val": "PC (Retro PSX Style)",
+
+      "cellblock_zero_summary_title": "MISSION BRIEF",
+      "cellblock_zero_summary_text": "In a dystopian future, you are the Culler of a living underground prison. Your task is not just to hold prisoners, but to use them as resources (electricity, defense, trade).",
+
+      "cellblock_zero_mechanic_1_title": "DEATH TRIANGLE AND BALANCE",
+      "cellblock_zero_mechanic_1_desc": "State (Authority), Mafia (Underground), and Corp (Biotech). You must keep relationships between 30% and 70% at all times. Excessive love brings assassination, hatred brings execution. You must also maintain the balance within the prison. When peace drops, prisoners will do anything to escape.",
+
+      "cellblock_zero_mechanic_2_title": "BIO-HARVESTING AND RESOURCE MANAGEMENT",
+      "cellblock_zero_mechanic_2_desc": "Prisoners are not just criminals, they are resources. Harvest blood for electricity, chitin for walls, and bone for turrets. You may need to sacrifice some prisoners to feed others. You must find the balance between resource management and moral dilemmas. Every incoming mutant might not be a criminal... But if they are useful, is there a problem with imprisoning them and using their parts?",
+
+      "cellblock_zero_features_title": "FEATURES",
+      "cellblock_zero_feat_1": "PSX Retro Aesthetic: Dithering, CRT effects, and dark atmosphere.",
+      "cellblock_zero_feat_2": "Mutant Stories: You can listen to the mutants' stories. If you wish, you can test whether they are telling the truth using various machines.",
+      "cellblock_zero_feat_3": "Balance and Base Building System: If you harvest enough mutants, you can upgrade the prison and unlock new turrets and defense mechanisms.",
+
+      "cellblock_zero_visual_caption_1": "Hallway & Mutant Encounter",
+      "cellblock_zero_visual_caption_2": "Harvesting Interface",
+      
+      "cellblock_zero_footer_devlog": "[ Read Devlogs (not active yet) ]",
 
 
       
@@ -744,7 +906,6 @@
       "dialogue_doc_func_load_title": "loadGraphFromJSON",
       "dialogue_doc_func_load_desc": "Clears the current graph and processes the provided JSON data. Places nodes according to their coordinates, restores their properties, and re-establishes connections.",
 
-
       "dialogue_doc_state_title": "State.js Module",
       "dialogue_doc_state_intro": "Centrally manages the application's global state, the LiteGraph instance, and project settings (languages, attributes).",
 
@@ -766,23 +927,129 @@
 
 
       
-      "lucifers_bargain_title": "Lucifer’s Bargain",
-      "lucifers_bargain_desc": "A dark-themed puzzle game where we strike a deal with the devil and cast spells to resurrect our lover.",
+      "lucifers_bargain_title": "Lucifer's Bargain",
+      "lucifers_bargain_desc": "A dark-themed puzzle game where we make a pact with the devil and cast spells to bring our lover back to life.",
+      "lucifers_bargain_tagline": "\"Love requires sacrifice. Sometimes, literally.\"",
       
+      "lucifers_bargain_info_genre_label": "GENRE:",
+      "lucifers_bargain_info_genre_val": "Puzzle Horror / Alchemy",
+      "lucifers_bargain_info_status_label": "STATUS:",
+      "lucifers_bargain_info_status_val": "Completed (Solo Dev)",
+      "lucifers_bargain_info_platform_label": "ENGINE:",
+      "lucifers_bargain_info_platform_val": "Unity",
+
+      "lucifers_bargain_summary_title": "THE RITUAL BEGINS",
+      "lucifers_bargain_summary_text": "A puzzle game inspired by PSX horror classics. Players must decipher cryptic clues from torn grimoire pages to mix specific ingredients and resurrect a loved one.",
+
+      "lucifers_bargain_mechanic_title": "WORD SPELL SYSTEM",
+      "lucifers_bargain_mechanic_desc": "Words are formed using the initials of the 4 spells you wish to cast (such as Love, Hate). To perform these spells, you must read the specific spell's page, deduce the correct ingredients from the written rhyme, and throw them into the cauldron.",
+
+      "lucifers_bargain_features_title": "FEATURES",
+      "lucifers_bargain_feat_1": "Cryptic Puzzles: Connect pages, solve recipes.",
+      "lucifers_bargain_feat_2": "Atmospheric Tension: Retro textures and eerie sound design.",
+      "lucifers_bargain_feat_3": "System Design: Inventory and cauldron combination logic.",
+
+      "lucifers_bargain_cap_gif": "Gameplay: Brewing Potion",
+      "lucifers_bargain_cap_unity": "Unity Scene View",
+      "lucifers_bargain_cap_ingame1": "Cellar Entrance",
+      "lucifers_bargain_cap_ingame2": "The Grimoire",
+
+      "lucifers_bargain_btn_play": "[ Download / View Game ]",
+
+
+
       "pixebit_title": "Pixebit.exe",
       "pixebit_desc": "Viruses have infested the universe, and we attempt to restore order by collecting files. A 2D platformer.",
+      "pixebit_tagline": "\"A challenging and glitchy adventure.\"",
+      
+      "pixebit_info_genre_label": "GENRE:",
+      "pixebit_info_genre_val": "2D Platformer",
+      "pixebit_info_event_label": "EVENT:",
+      "pixebit_info_event_val": "Atom Game Jam (72 Hours)",
+      
+      "pixebit_summary_title": "STORY & GOAL",
+      "pixebit_summary_text": "Noticing glitches appearing in his world, PixeBit sets out to investigate. He embarks on a challenging adventure where he must collect 5 Anti-Virus files to pass levels and repair the system.",
+
+      "pixebit_dev_title": "DEVELOPMENT PROCESS",
+      "pixebit_dev_text": "My first notable project, developed in 72 hours at Atom Game Jam with a random team. I coded the moving platforms, dialogue system, and collectible mechanics. As my first teamwork experience, it marks the project where I shook off my rookie status.",
+
+      "pixebit_cap_screen1": "Platform Mechanics",
+      "pixebit_cap_screen2": "Glitch World",
+
+      "pixebit_btn_video": "[ Watch Gameplay Video ]",
+      "pixebit_btn_itch": "[ Go to Itch.io Page ]",
+
+
       
       "unreal_combat_title": "Unreal Engine Combat System",
       "unreal_combat_desc": "An advanced melee combat and combo mechanics prototype developed with Unreal Engine 5.",
+      "unreal_combat_tagline": "\"A technical study to transition development skills to Unreal Engine 5.\"",
       
-      "content_creation_title": "Content Creation & Experimental",
-      "content_creation_desc": "A collection of video editing, game development, and experimental interactive art projects.",
+      "unreal_combat_info_type_label": "TYPE:",
+      "unreal_combat_info_type_val": "Technical Demo / Mechanics",
+      "unreal_combat_info_engine_label": "ENGINE:",
+      "unreal_combat_info_engine_val": "Unreal Engine 5 (Blueprints/C++)",
+      
+      "unreal_combat_summary_title": "TECHNICAL OVERVIEW",
+      "unreal_combat_summary_text": "A technical study to transition development skills to Unreal Engine 5. Implemented a functional Combat System with full animation blending, lock-on mechanics, and state machine integration.",
+
+      "unreal_combat_cap_gif": "Gameplay Loop: Combo & Locomotion",
+
+      "unreal_combat_video_desc": "Similar video demonstration:",
+      "unreal_combat_btn_video": "[ UE5 Combat System Video ]",
+
+
+
+      "eren_content_title": "Content Creation & Experimental",
+      "eren_content_desc": "A collection of video editing, game development, and experimental interactive art projects.",
+      "eren_content_tagline": "\"Mechanics analysis, tutorials, and experimental R&D projects.\"",
+      
+      "eren_content_info_type_label": "CATEGORY:",
+      "eren_content_info_type_val": "Education / R&D",
+      "eren_content_info_platform_label": "PLATFORM:",
+      "eren_content_info_platform_val": "YouTube",
+
+      "eren_content_summary_title": "CONTENT CREATION & R&D",
+      
+      "eren_content_text_main": "I actively produced game development content for YouTube. I worked on a wide range of mechanics, from <a href='#' class='external-link' data-url='https://youtu.be/XCxSDTpj_Es?si=jCZ67wEWmCloxkjS'>Turn-Based Strategy</a> games to <a href='#' class='external-link' data-url='https://youtu.be/KkdVDVBUwZ4?si=xK4L-Tgrne2FeWT5'>Undertale Boss Designs</a> and <a href='#' class='external-link' data-url='https://www.youtube.com/watch?v=NIOtp1A1HBI&list=PLlj3JZkQQk8neTQQH0iIwck-oLyShgTgV&pp=gAQB'>Spider-Man Combat System</a> tutorials in Unity.",
+      
+      "eren_content_text_secondary": "As an experimental R&D project, I developed a custom <a href='#' class='external-link' data-url='https://youtu.be/OSd7xlTzgJo?si=wM2je9jYjiQ24AnF'>Audio Input System</a> that maps real-time guitar notes to keyboard keystrokes. Using this system, I played Undertale with an electric guitar.",
+
+      "eren_content_footer_text": "I have included screenshots from select videos above. If you would like to examine the projects further, you can <a href='#' class='external-link' data-url='https://www.youtube.com/@erenle_oyun'>reach the channel here</a>. (Note: Video content is in Turkish).",
+
+      "eren_content_cap_guitar": "Experimental: Game Control with Guitar",
+      "eren_content_cap_spiderman": "Mechanic: Spider-Man Combat",
+      
+
+
       
       "mario_clone_title": "Mario Paper Clone",
       "mario_clone_desc": "A technical demo recreating the Paper Mario visual style within Unreal Engine.",
       
-      "backend_systems_title": "Backend Systems & Mobile Prototyping",
-      "backend_systems_desc": "Backend architectures and mobile application prototypes developed using Node.js, Python, and C#."
+      "backend_mobile_title": "Backend Systems & Mobile Prototyping",
+      "backend_mobile_desc": "Backend architecture example and mobile application prototypes.",
+      "backend_mobile_tagline": "\"Scalable system architecture and hyper-casual prototyping.\"",
+      
+      "backend_mobile_info_stack_label": "STACK:",
+      "backend_mobile_info_stack_val": "C# / Unity / JSON",
+      "backend_mobile_info_focus_label": "FOCUS:",
+      "backend_mobile_info_focus_val": "System Architecture / Mobile UX",
+
+      "backend_mobile_backend_title": "BACKEND SYSTEMS",
+      
+      "backend_mobile_loc_title": "Localization System",
+      "backend_mobile_loc_desc": "Developed a reusable JSON based localization system that dynamically swaps text assets at runtime based on key-value pairs.",
+      
+      "backend_mobile_serial_title": "Serialization",
+      "backend_mobile_serial_desc": "Implemented a scalable save/load system using JSON to handle persistent game data across sessions.",
+
+      "backend_mobile_proto_title": "MOBILE PROTOTYPING",
+      "backend_mobile_proto_desc": "Created hyper-casual prototypes for industry applications, including a fake multiplayer physics platformer and a shelf organization game.",
+
+      "backend_mobile_cap_proto1": "Fake Multiplayer Physics Platformer",
+      "backend_mobile_cap_proto2": "Shelf Organization Game",
+
+      "backend_mobile_code_header": "LocalizationManager.cs (Preview)"
     },
     "youview": {
       "search": "Search",
@@ -863,12 +1130,12 @@
       {
         "id": "projects",
         "title": "projects.list",
-        "content": "Click on projects to see details:\n<br><br>\n<span class='project-category'>GAME PROJECTS</span>\n<div class='project-link' data-query='dome_metamars'>Dome Metamars</div>\n<div class='project-link' data-query='antlerd’s_song'>Antlerd’s Song</div>\n<div class='project-link' data-query='basilantus'>Basilantus</div>\n<div class='project-link' data-query='cellblock_zero'>Cellblock ZERO</div>\n<div class='project-link' data-query='disport'>Disport</div>\n<div class='project-link' data-query='lucifer’s_bargain'>Lucifer’s Bargain</div>\n<div class='project-link' data-query='pixebit.exe'>Pixebit.exe</div>\n<div class='project-link' data-query='unreal_combat'>Unreal Engine Combat System</div>\n<br>\n<span class='project-category'>CONTENT & EXPERIMENTAL</span>\n<div class='project-link' data-query='content_creation'>Content Creation & Experimental Projects</div>\n<div class='project-link' data-query='mario_clone'>Mario Paper Clone</div>\n<br>\n<span class='project-category'>SOFTWARE & PROTOTYPING</span>\n<div class='project-link' data-query='backend_systems'>BACKEND SYSTEMS & MOBILE PROTOTYPING</div>"
+        "content": "Click on projects to see details:\n<span class='project-category'>GAME PROJECTS</span>\n<div class='project-link' data-query='dome_metamars'>Dome Metamars</div>\n<div class='project-link' data-query='antlerd’s_song'>Antlerd’s Song</div>\n<div class='project-link' data-query='basilantus'>Basilantus</div>\n<div class='project-link' data-query='cellblock_zero'>Cellblock ZERO</div>\n<div class='project-link' data-query='disport'>Disport</div>\n<div class='project-link' data-query='lucifer’s_bargain'>Lucifer’s Bargain</div>\n<div class='project-link' data-query='pixebit.exe'>Pixebit.exe</div>\n<div class='project-link' data-query='unreal_combat'>Unreal Engine Combat System</div>\n\n<span class='project-category'>CONTENT & EXPERIMENTAL</span>\n<div class='project-link' data-query='content_creation'>Content Creation & Experimental Projects</div>\n\n<span class='project-category'>SOFTWARE & PROTOTYPING</span>\n<div class='project-link' data-query='backend_systems'>BACKEND SYSTEMS & MOBILE PROTOTYPING</div>"
       },
       {
         "id": "contact",
         "title": "contact.msg",
-        "content": "To reach me:\n\nEmail: eren@example.com\nDiscord: eren#1234\n\nNote: Please don't text me asking 'Is the Matrix real?' after 11 PM."
+        "content": "To reach me:\n\nEmail: akcakayaeren@outlook.com\nDiscord: erenakcakaya\n\nNote: Please don't text me asking 'Is the Matrix real?' after 11 PM...\n\nOr do it! ¯\\_(ツ)_/¯"
       }
     ]
   }

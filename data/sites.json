@@ -102,8 +102,8 @@
   },
   "content creation": {
     "url": "http://www.eren-content.com",
-    "titleKey": "sites.content_creation_title",
-    "descriptionKey": "sites.content_creation_desc",
+    "titleKey": "sites.eren_content_title",
+    "descriptionKey": "sites.eren_content_desc",
     "isVisitable": true,
     "relatedResults": []
   },
@@ -123,8 +123,8 @@
   },
   "backend systems": {
     "url": "http://www.backend-proto.com",
-    "titleKey": "sites.backend_systems_title",
-    "descriptionKey": "sites.backend_systems_desc",
+    "titleKey": "sites.backend_mobile_title",
+    "descriptionKey": "sites.backend_mobile_desc",
     "isVisitable": true,
     "relatedResults": []
   },

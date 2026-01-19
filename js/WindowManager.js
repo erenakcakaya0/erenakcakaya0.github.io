@@ -5,35 +5,64 @@ DisportOS.WindowManager = {
         activeWindowId: null
     },
 
+    _isSmallScreen() {
+        return window.innerWidth <= 768;
+    },
+
     async createWindow(appData) {
         const windowId = `window-${appData.id}-${Date.now()}`;
+        const isSmall = this._isSmallScreen();
         
         const windowElem = document.createElement('div');
         windowElem.className = 'window';
         windowElem.id = windowId;
-        windowElem.style.width = `${appData.window.default_width}px`;
-        windowElem.style.height = `${appData.window.default_height}px`;
-        windowElem.style.top = `${Math.random() * 100 + 50}px`;
-        windowElem.style.left = `${Math.random() * 200 + 100}px`;
 
+        let startState = 'normal';
+        let customStyle = '';
+
+        if (isSmall) {
+            if (appData.window.canMaximize) {
+                windowElem.classList.add('maximized');
+                startState = 'maximized';
+            } else {
+                const w = appData.window.default_width;
+                const h = appData.window.default_height;
+                const left = (window.innerWidth - w) / 2;
+                const top = (window.innerHeight - h) / 2;
+                
+                windowElem.style.width = `${Math.min(w, window.innerWidth - 20)}px`;
+                windowElem.style.height = `${Math.min(h, window.innerHeight - 60)}px`;
+                windowElem.style.left = `${Math.max(10, left)}px`;
+                windowElem.style.top = `${Math.max(10, top)}px`;
+            }
+        } else {
+            windowElem.style.width = `${appData.window.default_width}px`;
+            windowElem.style.height = `${appData.window.default_height}px`;
+            windowElem.style.top = `${Math.random() * 100 + 50}px`;
+            windowElem.style.left = `${Math.random() * 200 + 100}px`;
+        }
+        // ------------------------------------------------
+
+        const maximizeBtnDisabled = (!appData.window.canMaximize || (isSmall && appData.window.canMaximize)) ? 'disabled' : '';
+        
         windowElem.innerHTML = `
             <div class="title-bar">
                 <img src="${appData.icon}" width="16" height="16" style="margin-right: 5px;">
                 <span class="title-bar-text">${DisportOS.helpers.getText(appData.window.title_key)}</span>
                 <div class="window-controls">
                     <button data-action="minimize" title="Küçült">_</button>
-                    <button data-action="maximize" title="Büyüt" ${appData.window.canMaximize ? '' : 'disabled'}>[]</button>
+                    <button data-action="maximize" title="Büyüt" ${maximizeBtnDisabled}>[]</button>
                     <button data-action="close" title="Kapat">X</button>
                 </div>
             </div>
-            <div class="content">Yükleniyor...</div>
+            <div class="content" style="overflow: auto;">Yükleniyor...</div>
         `;
 
         document.body.appendChild(windowElem);
 
         const windowState = {
             element: windowElem,
-            state: 'normal',
+            state: startState,
             appData: appData,
             previousGeometry: null,
             instance: null
@@ -203,23 +232,42 @@ DisportOS.WindowManager = {
 
     _attachEventListeners(windowElem, windowId) {
         const titleBar = windowElem.querySelector('.title-bar');
-        windowElem.addEventListener('mousedown', () => this.focusWindow(windowId));
         
+        // Pencereye tıklayınca öne getir
+        windowElem.addEventListener('mousedown', () => this.focusWindow(windowId));
+        windowElem.addEventListener('touchstart', () => this.focusWindow(windowId), { passive: true });
+        
+        // Kontrol butonları (Kapat, Küçült, Büyüt)
         const controls = windowElem.querySelector('.window-controls');
+        // Hem click hem touchend ile çalışabilir ama click genelde yeterlidir.
+        // Touch cihazlarda click biraz gecikmeli gelir.
         controls.addEventListener('click', (e) => {
-            const action = e.target.dataset.action;
+            const btn = e.target.closest('button'); // e.target svg veya img olabilir
+            if (!btn) return;
+            const action = btn.dataset.action;
             if (action === 'close') this.closeWindow(windowId);
             if (action === 'minimize') this.minimizeWindow(windowId);
             if (action === 'maximize') this.toggleMaximize(windowId);
         });
+        
+        // --- GÜNCELLENMİŞ SÜRÜKLEME MANTIĞI (Mouse + Touch) ---
+        let isDragging = false;
+        let startX, startY, initialLeft, initialTop;
 
-        titleBar.addEventListener('mousedown', (e) => {
+        const startDrag = (e) => {
             if (e.target.closest('.window-controls')) return;
+            
+            if (e.type === 'mousedown' && e.button !== 0) return;
+            
+            if(e.type === 'touchstart') {
+                //e.preventDefault();
+            }
 
             const windowState = this.state.openWindows.get(windowId);
             
             if (windowState.state === 'maximized') {
-                const mouseXRatio = e.clientX / windowElem.offsetWidth;
+                const pos = getEventPos(e);
+                const mouseXRatio = pos.x / windowElem.offsetWidth;
 
                 windowElem.classList.remove('maximized');
                 windowState.state = 'normal';
@@ -229,54 +277,74 @@ DisportOS.WindowManager = {
                 windowElem.style.width = `${newWidth}px`;
                 windowElem.style.height = `${newHeight}px`;
 
-                const newLeft = e.clientX - (newWidth * mouseXRatio);
-                const newTop = e.clientY - 15; 
+                const newLeft = pos.x - (newWidth * mouseXRatio);
+                const newTop = pos.y - 15; 
 
                 windowElem.style.left = `${newLeft}px`;
                 windowElem.style.top = `${newTop}px`;
             }
 
-            let offsetX = e.clientX - windowElem.offsetLeft;
-            let offsetY = e.clientY - windowElem.offsetTop;
+            isDragging = true;
+            this.focusWindow(windowId);
+
+            const pos = getEventPos(e);
+            startX = pos.x;
+            startY = pos.y;
             
-            const onMouseMove = (moveEvent) => {
-                let newLeft = moveEvent.clientX - offsetX;
-                let newTop = moveEvent.clientY - offsetY;
+            initialLeft = windowElem.offsetLeft;
+            initialTop = windowElem.offsetTop;
 
-                if (newTop < 0) {
-                    newTop = 0;
-                }
+            document.addEventListener('mousemove', onDrag);
+            document.addEventListener('mouseup', endDrag);
+            document.addEventListener('touchmove', onDrag, { passive: false });
+            document.addEventListener('touchend', endDrag);
+        };
 
-                const maxTop = window.innerHeight - 30 - 30; 
-                if (newTop > maxTop) {
-                    newTop = maxTop;
-                }
+        const onDrag = (e) => {
+            if (!isDragging) return;
+            if(e.type === 'touchmove') e.preventDefault();
 
-                const safeZone = 60; 
-                const windowWidth = windowElem.offsetWidth;
-                
-                const maxLeft = window.innerWidth - safeZone;
-                if (newLeft > maxLeft) {
-                    newLeft = maxLeft;
-                }
+            const pos = getEventPos(e);
+            const deltaX = pos.x - startX;
+            const deltaY = pos.y - startY;
 
-                const minLeft = -(windowWidth - safeZone);
-                if (newLeft < minLeft) {
-                    newLeft = minLeft;
-                }
+            let newLeft = initialLeft + deltaX;
+            let newTop = initialTop + deltaY;
 
-                // ----------------------------------------
-
-                windowElem.style.left = `${newLeft}px`;
-                windowElem.style.top = `${newTop}px`;
-            };
+            if (newTop < 0) newTop = 0;
             
-            const onMouseUp = () => {
-                document.removeEventListener('mousemove', onMouseMove);
-            };
+            const maxTop = window.innerHeight - 60; 
+            if (newTop > maxTop) newTop = maxTop;
+
+            const safeZone = 60; 
+            const windowWidth = windowElem.offsetWidth;
             
-            document.addEventListener('mousemove', onMouseMove);
-            document.addEventListener('mouseup', onMouseUp, { once: true });
-        });
+            const maxLeft = window.innerWidth - safeZone;
+            if (newLeft > maxLeft) newLeft = maxLeft;
+
+            const minLeft = -(windowWidth - safeZone);
+            if (newLeft < minLeft) newLeft = minLeft;
+
+            windowElem.style.left = `${newLeft}px`;
+            windowElem.style.top = `${newTop}px`;
+        };
+
+        const endDrag = () => {
+            isDragging = false;
+            document.removeEventListener('mousemove', onDrag);
+            document.removeEventListener('mouseup', endDrag);
+            document.removeEventListener('touchmove', onDrag);
+            document.removeEventListener('touchend', endDrag);
+        };
+
+        titleBar.addEventListener('mousedown', startDrag);
+        titleBar.addEventListener('touchstart', startDrag, { passive: false });
     }
 };
+
+function getEventPos(e) {
+    if (e.touches && e.touches.length > 0) {
+        return { x: e.touches[0].clientX, y: e.touches[0].clientY };
+    }
+    return { x: e.clientX, y: e.clientY };
+}

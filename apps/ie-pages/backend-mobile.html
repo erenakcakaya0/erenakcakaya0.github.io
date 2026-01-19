@@ -1,0 +1,183 @@
+<div class="ie-site-container" style="background-color: #1e1e1e; color: #d4d4d4; font-family: 'Consolas', 'Monaco', monospace; padding: 0; min-height: 100%; display: flex; flex-direction: column;">
+    
+    <style>
+        /* TAB STYLES */
+        .ide-tab {
+            padding: 10px 20px;
+            background: #2d2d2d;
+            color: #969696;
+            font-size: 12px;
+            cursor: pointer;
+            border-right: 1px solid #1e1e1e;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: background 0.2s;
+            position: relative;
+            user-select: none;
+            white-space: nowrap;
+        }
+        .ide-tab:hover { background: #252526; color: #fff; }
+        .ide-tab.active { background: #1e1e1e; color: #fff; border-top: 2px solid #007acc; }
+        
+        /* ANIMATIONS */
+        @keyframes wiggle {
+            0% { transform: rotate(0deg); } 5% { transform: rotate(5deg); } 10% { transform: rotate(-5deg); }
+            15% { transform: rotate(5deg); } 20% { transform: rotate(0deg); } 100% { transform: rotate(0deg); }
+        }
+        .notify-anim { animation: wiggle 2.5s infinite ease-in-out; }
+        .notify-dot { width: 8px; height: 8px; background-color: #ff5f56; border-radius: 50%; display: inline-block; box-shadow: 0 0 5px #ff5f56; }
+
+        /* CONTENT VISIBILITY */
+        .tab-content { display: none; height: 100%; overflow: hidden; }
+        .tab-content.active { display: flex; flex-direction: column; }
+
+        /* --- LAYOUT UPDATES --- */
+        .mobile-showcase {
+            flex: 1; 
+            overflow: auto; 
+            display: flex; 
+            flex-direction: column; /* Dikey hizalama (Yazı üstte, telefonlar altta) */
+            align-items: center;    /* Yatay ortalama */
+            background: #1e1e1e;
+            padding: 30px;
+        }
+
+        .mobile-intro-text {
+            width: 100%;
+            max-width: 600px;
+            text-align: center;
+            color: #aaa; 
+            font-size: 13px;
+            margin-bottom: 30px; /* Telefonlarla arasındaki boşluk */
+        }
+
+        .phones-row {
+            display: flex;
+            gap: 40px;
+            justify-content: center;
+            flex-wrap: wrap; /* Ekran küçülürse alt alta geçsin */
+        }
+
+        /* SCROLLBAR */
+        ::-webkit-scrollbar { width: 10px; height: 10px; }
+        ::-webkit-scrollbar-track { background: #1e1e1e; }
+        ::-webkit-scrollbar-thumb { background: #424242; }
+
+        /* MEDIA QUERY */
+        @media (max-width: 768px) {
+            .phones-row { flex-direction: column; align-items: center; gap: 30px; }
+            .ide-tab { padding: 10px 10px; font-size: 11px; }
+            .tabs-container { overflow-x: auto; }
+        }
+    </style>
+
+    <div style="background: #333333; padding: 10px 20px; display: flex; align-items: center; justify-content: space-between;">
+        <div style="display: flex; gap: 10px; align-items: center;">
+            <div style="width: 12px; height: 12px; border-radius: 50%; background: #ff5f56;"></div>
+            <div style="width: 12px; height: 12px; border-radius: 50%; background: #ffbd2e;"></div>
+            <div style="width: 12px; height: 12px; border-radius: 50%; background: #27c93f;"></div>
+            <span style="margin-left: 10px; font-size: 13px; color: #fff; font-weight: bold;" data-lang-key="sites.backend_mobile_title">Backend & Mobile</span>
+        </div>
+    </div>
+
+    <div class="tabs-container" style="background: #252526; display: flex; border-bottom: 1px solid #111;">
+        <div id="tab-btn-code" class="ide-tab active" onclick="switchIdeTab('code')">
+            <span style="color: #4ec9b0;">C#</span> LocalizationManager.cs
+        </div>
+        <div id="tab-btn-mobile" class="ide-tab notify-anim" onclick="switchIdeTab('mobile')">
+            <span style="color: #e37933;">Unity</span> Mobile_Prototypes.scene
+            <div id="mobile-badge" class="notify-dot"></div>
+        </div>
+    </div>
+
+    <div style="flex: 1; position: relative; overflow: hidden;">
+
+        <div id="view-code" class="tab-content active">
+            <div style="flex: 1; overflow: auto; padding: 20px; background: #1e1e1e; font-size: 12px; line-height: 1.5;">
+                
+                <div style="margin-bottom: 20px; border-left: 3px solid #007acc; padding-left: 10px; color: #9cdcfe;">
+                    <strong style="display: block; color: #fff; margin-bottom: 5px;" data-lang-key="sites.backend_mobile_loc_title">Localization System</strong>
+                    <span style="color: #808080;" data-lang-key="sites.backend_mobile_loc_desc">...</span>
+                </div>
+
+                <pre style="margin: 0; color: #d4d4d4; font-family: 'Consolas', monospace;">
+<span style="color: #569cd6;">using</span> UnityEngine;
+<span style="color: #569cd6;">using</span> System.Collections.Generic;
+
+<span style="color: #569cd6;">public class</span> <span style="color: #4ec9b0;">LocalizationManager</span> : <span style="color: #4ec9b0;">MonoBehaviour</span>
+{
+    <span style="color: #569cd6;">public static</span> <span style="color: #4ec9b0;">LocalizationManager</span> Instance;
+    <span style="color: #569cd6;">private</span> <span style="color: #4ec9b0;">Dictionary</span>&lt;<span style="color: #569cd6;">string</span>, <span style="color: #569cd6;">string</span>&gt; _uiDict;
+
+    <span style="color: #569cd6;">private void</span> <span style="color: #dcdcaa;">Awake</span>()
+    {
+        <span style="color: #c586c0;">if</span> (Instance == <span style="color: #569cd6;">null</span>)
+        {
+            Instance = <span style="color: #569cd6;">this</span>;
+            <span style="color: #dcdcaa;">DontDestroyOnLoad</span>(gameObject);
+            <span style="color: #dcdcaa;">LoadLanguage</span>(<span style="color: #ce9178;">"general"</span>);
+        }
+    }
+
+    <span style="color: #569cd6;">public void</span> <span style="color: #dcdcaa;">LoadLanguage</span>(<span style="color: #569cd6;">string</span> fileName)
+    {
+        _uiDict = <span style="color: #569cd6;">new</span> <span style="color: #4ec9b0;">Dictionary</span>&lt;<span style="color: #569cd6;">string</span>, <span style="color: #569cd6;">string</span>&gt;();
+        <span style="color: #569cd6;">string</span> filePath = <span style="color: #ce9178;">$"Localization/{currentLanguage}_{fileName}"</span>;
+        <span style="color: #4ec9b0;">TextAsset</span> jsonFile = <span style="color: #4ec9b0;">Resources</span>.<span style="color: #dcdcaa;">Load</span>&lt;<span style="color: #4ec9b0;">TextAsset</span>&gt;(filePath);
+
+        <span style="color: #c586c0;">if</span> (jsonFile != <span style="color: #569cd6;">null</span>)
+        {
+            <span style="color: #4ec9b0;">LocalizationData</span> data = <span style="color: #4ec9b0;">JsonUtility</span>.<span style="color: #dcdcaa;">FromJson</span>&lt;<span style="color: #4ec9b0;">LocalizationData</span>&gt;(jsonFile.text);
+            <span style="color: #c586c0;">foreach</span> (<span style="color: #569cd6;">var</span> entry <span style="color: #c586c0;">in</span> data.ui_elements)
+            {
+                <span style="color: #c586c0;">if</span> (!_uiDict.<span style="color: #dcdcaa;">ContainsKey</span>(entry.key)) 
+                    _uiDict.<span style="color: #dcdcaa;">Add</span>(entry.key, entry.<span style="color: #569cd6;">value</span>);
+            }
+        }
+    }
+}</pre>
+                
+                <div style="margin-top: 30px; border-left: 3px solid #dcdcaa; padding-left: 10px; color: #dcdcaa;">
+                    <strong style="display: block; color: #fff; margin-bottom: 5px;" data-lang-key="sites.backend_mobile_serial_title">Serialization</strong>
+                    <span style="color: #808080;" data-lang-key="sites.backend_mobile_serial_desc">...</span>
+                </div>
+            </div>
+        </div>
+
+        <div id="view-mobile" class="tab-content">
+            
+            <div style="padding: 10px 20px; background: #252526; color: #ccc; font-size: 11px; border-bottom: 1px solid #000; display: flex; justify-content: space-between;">
+                <span data-lang-key="sites.backend_mobile_proto_title">MOBILE PROTOTYPING</span>
+                <span style="color: #888;">Resolution: 1080x1920</span>
+            </div>
+
+            <div class="mobile-showcase">
+                
+                <div class="mobile-intro-text">
+                    <p data-lang-key="sites.backend_mobile_proto_desc">...</p>
+                </div>
+
+                <div class="phones-row">
+                    <div style="width: 240px; height: 480px; border: 12px solid #000; border-radius: 30px; background: #000; overflow: hidden; position: relative; box-shadow: 0 20px 40px rgba(0,0,0,0.6); flex-shrink: 0;">
+                        <div style="position: absolute; top: 0; left: 50%; transform: translateX(-50%); width: 100px; height: 20px; background: #000; border-radius: 0 0 12px 12px; z-index: 2;"></div>
+                        <div style="height: 100%; background: #222;">
+                            <img src="assets/images/mobile_proto_1.gif" class="clickable-image" style="width: 100%; height: 100%; object-fit: cover;" alt="Mobile Proto 1">
+                        </div>
+                        <div style="position: absolute; bottom: 0; width: 100%; background: rgba(0,0,0,0.8); color: #fff; text-align: center; font-size: 10px; padding: 5px;" data-lang-key="sites.backend_mobile_cap_proto1">...</div>
+                    </div>
+
+                    <div style="width: 240px; height: 480px; border: 12px solid #000; border-radius: 30px; background: #000; overflow: hidden; position: relative; box-shadow: 0 20px 40px rgba(0,0,0,0.6); flex-shrink: 0;">
+                        <div style="position: absolute; top: 0; left: 50%; transform: translateX(-50%); width: 100px; height: 20px; background: #000; border-radius: 0 0 12px 12px; z-index: 2;"></div>
+                        <div style="height: 100%; background: #222;">
+                            <img src="assets/images/mobile_proto_2.gif" class="clickable-image" style="width: 100%; height: 100%; object-fit: cover;" alt="Mobile Proto 2">
+                        </div>
+                        <div style="position: absolute; bottom: 0; width: 100%; background: rgba(0,0,0,0.8); color: #fff; text-align: center; font-size: 10px; padding: 5px;" data-lang-key="sites.backend_mobile_cap_proto2">...</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
